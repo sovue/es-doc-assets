@@ -1,0 +1,33 @@
+name: Сжатие изображений
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.png'
+      - '**.webp'
+
+jobs:
+  build:
+    name: calibreapp/image-actions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Сжатие изображений
+        id: calibre
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: true
+      - name: Создание Pull Request, если нужно
+        if: steps.calibre.outputs.markdown != ''
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: Сжатые изображения
+          branch-suffix: short-commit-hash
+          commit-message: 'Оптимизированы изображения'
+          body: ${{ steps.calibre.outputs.markdown }}
+          delete-branch: true
