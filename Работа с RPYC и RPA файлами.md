@@ -42,7 +42,7 @@ python rpatool -c название_архива.rpa путь_до_папки_с_
 3. Перейдите в папку проекта, создайте новый `rpy` файл и откройте его.
 4. Пропишите:
 
-```python
+```renpy
 init python:
     build.archive("archive", "all") # Создаём новый архив с названием 'archive'
     build.classify('game/**', 'archive') # Помещаем все файлы из папки 'game' в 'archive'
@@ -50,7 +50,7 @@ init python:
 
 При необходимости можем вместо того, чтобы указывать все файлы, указать конкретные расширения файлов:
 
-```python
+```renpy
 init python:
     # Изображения
     build.classify('game/**.jpg', 'archive')
@@ -64,7 +64,7 @@ init python:
 
 Также можем положить файлы в разные архивы:
 
-```python
+```renpy
 init python:
     # Создаём архивы
     build.classify("images", "all")
@@ -88,7 +88,7 @@ init python:
 
 Создаём `rpy` в папке мода с любым названием, прописываем
 
-```python
+```renpy
 init -9999 python:
     config.archives.append("Путь до rpa архива без расширения")
 ```
