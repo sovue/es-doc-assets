@@ -1,0 +1,119 @@
+# Художники, берущие заказы на арт для модов «Бесконечного лета».
+# Страница: /artists
+#
+# Поля художника:
+#   name     — имя (как подписывается автор). Обязательно.
+#   status   — приём заказов:
+#                open     — заказы открыты
+#                closed   — заказы закрыты
+#                unknown  — не уточнялось (значение по умолчанию)
+#   preview  — необязательно. Прямая ссылка на картинку-пример работы
+#              (показывается в галерее и таблице). Например профильный
+#              арт или обложка. Если не задано — покажем монограмму.
+#   logo     — необязательно. Прямая ссылка на аватар/логотип автора.
+#   links    — ссылки на площадки автора. Ключи произвольные; известные
+#              (vk, tg, boosty, discord, twitter, instagram, artstation,
+#              behance, youtube, site) получают красивую подпись, любой
+#              другой ключ подписывается как есть.
+#
+# Пример полностью заполненного автора:
+#   - name: Пример
+#     status: open
+#     preview: https://example.com/art.jpg
+#     logo: https://example.com/logo.jpg
+#     links: { vk: https://vk.com/example, tg: https://t.me/example }
+
+artists:
+  - name: teromioset.
+    status: unknown
+    logo: https://sun9-88.userapi.com/s/v1/ig2/PB8Jrc-WFcvAF4CCh1WPRe2OR-NoBHSGRWzhQnVv7Cfxshw2XeQ6TGWCf9MaKxOkekkzLaIWx3kCiDCtAh34pIaz.jpg?quality=95&as=32x16,48x24,72x36,108x54,160x80,240x120,360x180,480x240,540x270,640x320,720x360,1080x540,1280x640,1440x720,2560x1280&from=bu&u=OZBpaFZuELq51N8j2UMECFqBC0qjl8hiVsE8krRYttc&cs=2560x0
+    preview: https://sun9-22.userapi.com/hi-p3471rQpV1K2HLIJkBHEuLekfSIkD4dTynw/iWBCZxNxHfs.jpg
+    links: { vk: https://vk.com/teromioset }
+
+  - name: CreppyLandau
+    status: open
+    logo: https://sun9-51.userapi.com/s/v1/ig2/G2WyYnJB-VghTflIqPDd-fNrhgOy0fZmY4AMpae4BbjptjmLTkDIjurzeSejE6kRxBworWUiYNgeRkQ1em1dYN2_.jpg?quality=95&as=32x29,48x44,72x66,108x99,160x147,240x221,360x331,480x441,540x497,640x588,720x662,1080x993,1280x1177&from=bu&u=s1e-GbIWl69b-O9IXwMpGRvX15ldkTuGttdINYkg64Y&cs=1280x0
+    preview: https://sun9-82.userapi.com/impf/4VlJwFevOc8Yx7X_ObYRacy854kjQVtic6_rVw/RIi1eYKfl6I.jpg
+    links: { vk: https://vk.com/creppylandau1 }
+
+  - name: BJLT
+    status: unknown
+    logo: https://sun9-86.userapi.com/s/v1/ig2/gLskzlAtu79W8pKo3rQ2xqHFLYuytrqnUUaWCcB8AF5fIM93BY0oJSIVJ_9QKKkkKEAKR0BNNVRqcMp1hdZV_JFC.jpg?quality=95&as=32x39,48x58,72x87,108x131,160x194,240x291,360x437,480x582,540x655,640x776,720x873,1080x1310,1089x1321&from=bu&u=m_pdtDudD41i0hVb741zq2CM0TntS1aPPIIq47paTg4&cs=1089x0
+    preview: https://sun9-28.userapi.com/VHgG6sZFDKLcZ9MGgthDTzj1bhq2S_7YAWDzvA/jpLicHByu0k.jpg
+    links: { vk: https://vk.com/bomjjack, tg: https://t.me/jackbomj }
+
+  - name: KiriK
+    status: unknown
+    links: { vk: https://vk.com/kirik_arts }
+
+  - name: BeTry
+    status: open
+    links: { vk: https://vk.com/betryy }
+
+  - name: artsam
+    status: open
+    links: { vk: https://vk.com/club198785439 }
+
+  - name: Himbeere
+    status: open
+    links: { vk: https://vk.com/himbeere79 }
+
+  - name: "Тупое название -_-"
+    status: open
+    links: { vk: https://vk.com/isumisenpai }
+
+  - name: shwwma
+    status: open
+    links: { vk: https://vk.com/shwwma }
+
+  - name: EreeSt studio
+    status: open
+    links: { vk: https://vk.com/ereeststudio }
+
+  - name: Орика
+    status: unknown
+    links: { vk: https://vk.com/orika_art }
+
+  - name: SHONI AGITA
+    status: open
+    links: { vk: https://vk.com/shoniagita }
+
+  - name: nezunayu
+    status: unknown
+    links: { vk: https://vk.com/shiranai }
+
+  - name: puhhhel
+    status: open
+    links: { vk: https://vk.com/puhhhel }
+
+  - name: Sweet and crazy art
+    status: open
+    links: { vk: https://vk.com/club194639783 }
+
+  - name: LEONZO
+    status: open
+    links: { vk: https://vk.com/leonzo030, tg: https://t.me/leonzo1 }
+
+  - name: Weeping Cat
+    status: open
+    links: { vk: https://vk.com/weepingcat }
+
+  - name: Мифия
+    status: open
+    links: { vk: https://vk.com/mifiya }
+
+  - name: redgras
+    status: open
+    links: { vk: https://vk.com/redgras, tg: https://t.me/redgras_art }
+
+  - name: Нейроме
+    status: open
+    links: { vk: https://vk.com/neural_knight }
+
+  - name: whale dream (Соля арт)
+    status: open
+    links: { vk: https://vk.com/art_solya }
+
+  - name: хлам
+    status: unknown
+    links: { vk: https://vk.com/publicsvalka }
