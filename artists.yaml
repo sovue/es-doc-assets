@@ -7,21 +7,39 @@
 #                open     — заказы открыты
 #                closed   — заказы закрыты
 #                unknown  — не уточнялось (значение по умолчанию)
-#   preview  — необязательно. Прямая ссылка на картинку-пример работы
-#              (показывается в галерее и таблице). Например профильный
-#              арт или обложка. Если не задано — покажем монограмму.
-#   logo     — необязательно. Прямая ссылка на аватар/логотип автора.
+#   preview  — необязательно. Картинка-пример работы (показывается в галерее
+#              и таблице). Например профильный арт или обложка. Если не
+#              задано — покажем монограмму. Можно указать двумя способами:
+#                - https://... — прямая ссылка. Сайт сам скачает картинку,
+#                  перегонит в webp и закэширует у себя (так что даже
+#                  ссылки, которые блокирует браузер напрямую, всё равно
+#                  показываются).
+#                - локальный путь — если картинка скачана и лежит прямо
+#                  в этом репозитории, в папке artists/ (создайте её рядом
+#                  с game/ и docs/). Путь пишется ОТНОСИТЕЛЬНО ЭТОЙ ПАПКИ
+#                  (без "artists/" в начале), например creppylandau/preview.jpg
+#                  для файла <репозиторий>/artists/creppylandau/preview.jpg.
+#   logo     — необязательно. Аватар/логотип автора. Те же два варианта, что
+#              и у preview (ссылка или локальный путь в artists/).
 #   links    — ссылки на площадки автора. Ключи произвольные; известные
 #              (vk, tg, boosty, discord, twitter, instagram, artstation,
 #              behance, youtube, site) получают красивую подпись, любой
 #              другой ключ подписывается как есть.
 #
-# Пример полностью заполненного автора:
+# Пример со ссылкой:
 #   - name: Пример
 #     status: open
 #     preview: https://example.com/art.jpg
 #     logo: https://example.com/logo.jpg
 #     links: { vk: https://vk.com/example, tg: https://t.me/example }
+#
+# Пример с локальными файлами (лежат в artists/example2/ этого репозитория,
+# т.е. в <репозиторий>/artists/example2/preview.jpg и .../logo.webp):
+#   - name: Пример2
+#     status: open
+#     preview: example2/preview.jpg
+#     logo: example2/logo.webp
+#     links: { vk: https://vk.com/example2 }
 
 artists:
   - name: teromioset.
@@ -33,7 +51,7 @@ artists:
   - name: CreppyLandau
     status: open
     logo: https://sun9-51.userapi.com/s/v1/ig2/G2WyYnJB-VghTflIqPDd-fNrhgOy0fZmY4AMpae4BbjptjmLTkDIjurzeSejE6kRxBworWUiYNgeRkQ1em1dYN2_.jpg?quality=95&as=32x29,48x44,72x66,108x99,160x147,240x221,360x331,480x441,540x497,640x588,720x662,1080x993,1280x1177&from=bu&u=s1e-GbIWl69b-O9IXwMpGRvX15ldkTuGttdINYkg64Y&cs=1280x0
-    preview: https://sun9-82.userapi.com/impf/4VlJwFevOc8Yx7X_ObYRacy854kjQVtic6_rVw/RIi1eYKfl6I.jpg
+    preview: https://sun9-75.userapi.com/impf/5yHCA_MZ8v06h8KJ0V1gFIfjb7s5d1dLgy6U9w/Y6f7LchNI68.jpg?size=1920x768&quality=95&crop=0,670,1772,708&sign=2c1d809627468f0e6a1f06cd1fbf9b57&c_uniq_tag=9zrY6uJ_wWJp3Me61no_1xfCLrwSW5bYg4MOzD_03jU&type=cover_group
     links: { vk: https://vk.com/creppylandau1 }
 
   - name: BJLT
@@ -44,18 +62,26 @@ artists:
 
   - name: KiriK
     status: unknown
-    links: { vk: https://vk.com/kirik_arts }
+    logo: https://sun9-74.userapi.com/s/v1/ig2/wuQ7tBSksxzWXLVr3hsU5pGbLkhyx8y4glxukeUIwn7HrLSh0igQGElfBJ0wMsOcbQCT_qmPTv0H7gE0DbPNGpDO.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,750x750&from=bu&u=-G0NoRPBZgj-iLLYn5rHxEx0FtwEssjKAwStAq7aP9I&cs=750x0
+    preview: https://sun9-9.userapi.com/rhxxzc_YoCHNXF8eD00Ij9IKKXhe9Wdffkalkg/U6FGyOwX2k4.jpg
+    links: { vk: https://vk.com/kirik_arts, tg: https://t.me/+XYwC8XiDk74yMTMy}
 
   - name: BeTry
     status: open
+    logo: https://sun9-88.userapi.com/s/v1/ig2/gBKtk-Yd3VMf0ujlPZqk2gfLdTpkzyXps_EeAdQtZr3cBUlIU80QbHe1ZGTgzsbPmqiJ8UNOw-UQM2QYpEnoN59F.jpg?quality=96&as=32x22,48x34,72x50,108x75,160x112,240x168,360x252,480x336,540x377,640x447,720x503,1080x755,1280x895,1440x1007,1701x1189&from=bu&u=xgAJ3mnqFMRG90aR__YYQQNCNCkhj27ZNkCGpOZByfE&cs=1701x0
+    preview: https://sun9-88.userapi.com/tw-mQ_AI1rITJiAOchl4wy03wx7GRaLJI6QgGQ/Gx85Q_2to8s.jpg
     links: { vk: https://vk.com/betryy }
 
   - name: artsam
     status: open
+    logo: https://sun9-84.userapi.com/s/v1/ig2/kZNm-kduKOFsx_RgeA4gXJlH3Q845CQlMdYGnlXjP4Kth6QYRjdeGZC8IIaxATxgLgUnBQjy9pCy3qNWE2fZXRDF.jpg?quality=96&as=32x26,48x38,72x57,108x86,160x128,240x192,360x287,480x383,540x431,640x511,720x575,1080x862,1280x1022,1440x1150,1850x1477&from=bu&u=AFH7X77jM6CIriCW8C4TQdbXkZIXQhZyy1zxR1bzX5c&cs=1850x0
+    preview: https://sun9-56.userapi.com/impf/N5cg_J2K0xVg9uVtT3ZpcKD-BOEdIlmxdJsmSQ/f8TwULKZdRo.jpg?size=1818x606&quality=95&crop=0,473,1650,550&sign=e35dd0380ecbc10dd33c864db8f03775&c_uniq_tag=6-9OiLfyNT_tB_XVcqSpu2Qx1cYiPZLOqHLMkK0XAyM&type=cover_group
     links: { vk: https://vk.com/club198785439 }
 
   - name: Himbeere
-    status: open
+    status: unknown
+    logo: https://sun9-74.userapi.com/s/v1/ig2/Lhvf_wtTFkTPtZk7ufnWIIsXdnfZTK5VU70N7f5JYRuz6OCpxPdlL7BNQnX8XiMk1hPRI8j4v6ptOcvq9ud06yB8.jpg?quality=95&as=32x40,48x59,72x89,108x134,160x198,240x297,360x445,480x594,540x668,640x792,720x891,1080x1336,1280x1584,1440x1782,2069x2560&from=bu&u=84xPAzDU2mTRwB19rgRCLzD3tgHVkRLh6jPtymkf4zo&cs=2069x0
+    preview: https://sun9-32.userapi.com/impf/VDu2SJQes3daHWwWH3RNOINiJqqa1VPz3x2MzQ/OXragzlv98s.jpg?size=1818x606&quality=95&crop=0,57,1920,640&sign=9ab70cafcb7f14ac42995344499fe486&c_uniq_tag=6sZNIJHjmvL4cqCDZ2-rJb_EhlUjO51JLg-JBHrpQlg&type=cover_group
     links: { vk: https://vk.com/himbeere79 }
 
   - name: "Тупое название -_-"
