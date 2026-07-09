@@ -22,9 +22,10 @@
 #   logo     — необязательно. Аватар/логотип автора. Те же два варианта, что
 #              и у preview (ссылка или локальный путь в artists/).
 #   links    — ссылки на площадки автора. Ключи произвольные; известные
-#              (vk, tg, boosty, discord, twitter, instagram, artstation,
-#              behance, youtube, site) получают красивую подпись, любой
-#              другой ключ подписывается как есть.
+#              (vk, tg, boosty, discord, twitter, x, instagram, artstation,
+#              behance, youtube, site, deviantart, tumblr, twitch,
+#              furaffinity, pixiv, patreon, tiktok, bluesky) получают
+#              красивую подпись, любой другой ключ подписывается как есть.
 #
 # Пример со ссылкой:
 #   - name: Пример
@@ -58,25 +59,25 @@ artists:
     status: unknown
     logo: https://sun9-86.userapi.com/s/v1/ig2/gLskzlAtu79W8pKo3rQ2xqHFLYuytrqnUUaWCcB8AF5fIM93BY0oJSIVJ_9QKKkkKEAKR0BNNVRqcMp1hdZV_JFC.jpg?quality=95&as=32x39,48x58,72x87,108x131,160x194,240x291,360x437,480x582,540x655,640x776,720x873,1080x1310,1089x1321&from=bu&u=m_pdtDudD41i0hVb741zq2CM0TntS1aPPIIq47paTg4&cs=1089x0
     preview: https://sun9-28.userapi.com/VHgG6sZFDKLcZ9MGgthDTzj1bhq2S_7YAWDzvA/jpLicHByu0k.jpg
-    links: { vk: https://vk.com/bomjjack, tg: https://t.me/jackbomj }
+    links: { vk: https://vk.com/bomjjack, tg: https://t.me/jackbomj, twitter: https://twitter.com/BomjJack, deviantart: https://www.deviantart.com/jackybomjik, tumblr: https://bomjjack.tumblr.com/ }
 
   - name: KiriK
     status: unknown
     logo: https://sun9-74.userapi.com/s/v1/ig2/wuQ7tBSksxzWXLVr3hsU5pGbLkhyx8y4glxukeUIwn7HrLSh0igQGElfBJ0wMsOcbQCT_qmPTv0H7gE0DbPNGpDO.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,750x750&from=bu&u=-G0NoRPBZgj-iLLYn5rHxEx0FtwEssjKAwStAq7aP9I&cs=750x0
     preview: https://sun9-9.userapi.com/rhxxzc_YoCHNXF8eD00Ij9IKKXhe9Wdffkalkg/U6FGyOwX2k4.jpg
-    links: { vk: https://vk.com/kirik_arts, tg: https://t.me/+XYwC8XiDk74yMTMy}
+    links: { vk: https://vk.com/kirik_arts, tg: https://t.me/+XYwC8XiDk74yMTMy, discord: https://discord.com/invite/JP55WmU, boosty: https://boosty.to/kirik_arts }
 
   - name: BeTry
     status: open
     logo: https://sun9-88.userapi.com/s/v1/ig2/gBKtk-Yd3VMf0ujlPZqk2gfLdTpkzyXps_EeAdQtZr3cBUlIU80QbHe1ZGTgzsbPmqiJ8UNOw-UQM2QYpEnoN59F.jpg?quality=96&as=32x22,48x34,72x50,108x75,160x112,240x168,360x252,480x336,540x377,640x447,720x503,1080x755,1280x895,1440x1007,1701x1189&from=bu&u=xgAJ3mnqFMRG90aR__YYQQNCNCkhj27ZNkCGpOZByfE&cs=1701x0
     preview: https://sun9-88.userapi.com/tw-mQ_AI1rITJiAOchl4wy03wx7GRaLJI6QgGQ/Gx85Q_2to8s.jpg
-    links: { vk: https://vk.com/betryy }
+    links: { vk: https://vk.com/betryy, boosty: https://boosty.to/betry }
 
   - name: artsam
     status: open
     logo: https://sun9-84.userapi.com/s/v1/ig2/kZNm-kduKOFsx_RgeA4gXJlH3Q845CQlMdYGnlXjP4Kth6QYRjdeGZC8IIaxATxgLgUnBQjy9pCy3qNWE2fZXRDF.jpg?quality=96&as=32x26,48x38,72x57,108x86,160x128,240x192,360x287,480x383,540x431,640x511,720x575,1080x862,1280x1022,1440x1150,1850x1477&from=bu&u=AFH7X77jM6CIriCW8C4TQdbXkZIXQhZyy1zxR1bzX5c&cs=1850x0
     preview: https://sun9-56.userapi.com/impf/N5cg_J2K0xVg9uVtT3ZpcKD-BOEdIlmxdJsmSQ/f8TwULKZdRo.jpg?size=1818x606&quality=95&crop=0,473,1650,550&sign=e35dd0380ecbc10dd33c864db8f03775&c_uniq_tag=6-9OiLfyNT_tB_XVcqSpu2Qx1cYiPZLOqHLMkK0XAyM&type=cover_group
-    links: { vk: https://vk.com/club198785439 }
+    links: { vk: https://vk.com/club198785439, behance: https://www.behance.net/arttssam }
 
   - name: Himbeere
     status: unknown
@@ -94,31 +95,31 @@ artists:
     status: open
     logo: https://sun9-57.userapi.com/s/v1/ig2/zImp9gOidsKqjhs_ZkoFjibdQkO7o6fZGxFXuWUB9_XWTMIx-ik-ff3Ok-bJaGpsHMvZsJfQ_2lIjDSFwAjMUAnG.jpg?quality=95&as=32x47,48x71,72x106,108x159,160x236,240x353,360x530,480x707,540x795,640x942,720x1060,1080x1590,1280x1885,1420x2091&from=bu&u=mwFDwyw-JLbH0LLwXMVsC7E7SbDgDPEEWOEeLmWyoho&cs=1420x0
     preview: https://sun1-22.userapi.com/impf/-k7kL37TmJsSzAHN3WjIACGdNpVvLyq_xnEgSA/0ZxVSwqmccE.jpg?size=1920x768&quality=95&crop=76,120,1745,697&sign=b3bd0f1d626e513b33ffa2bf70d9600b&c_uniq_tag=-wpD0a8ayOb1Rs4_5despgUJY6HdIWPPBbtnzqeP_XQ&type=cover_group
-    links: { vk: https://vk.com/shwwma }
+    links: { vk: https://vk.com/shwwma, boosty: https://boosty.to/mtsleepykingdom, discord: https://discord.gg/8AFpJmz7KB, twitch: https://www.twitch.tv/shwwma, artstation: https://www.artstation.com/shwwma, deviantart: https://www.deviantart.com/marktailor }
 
   - name: EreeSt studio
     status: open
     logo: https://sun9-21.userapi.com/s/v1/ig2/6DVdU8OGKTqFFRUiD4ZBFzx82xb7I4pY3foj1QlTCr1rTqkDQfM_wnc76zteMj-sM9zZb-0iHMlHe-pbzFBLAENg.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1440x1440,1977x1977&from=bu&u=kCojax50OhFS23mxjigbyJlHQnoV8AWKn_OZH_tZDxM&cs=1977x0
     preview: https://sun9-75.userapi.com/impf/1gM80_0WJSrwIXGBYbQtwxwZmcFosNpzP_A4ZA/4xDRb8omWyU.jpg?size=1818x606&quality=95&crop=0,128,1920,640&sign=2c628bb3d32b5700c1c8750b77023d10&c_uniq_tag=-NXUIVIAY8h2xpPv798Xwgd3gIjrIqv-JEd7mzF9hGs&type=cover_group
-    links: { vk: https://vk.com/ereeststudio, tg: https://t.me/EreeStStudioA }
+    links: { vk: https://vk.com/ereeststudio, tg: https://t.me/EreeStStudioA, boosty: https://boosty.to/ereest, discord: https://discord.gg/r3pQWjRJZa }
 
   - name: Орика
     status: unknown
     logo: https://sun9-10.userapi.com/s/v1/ig1/pJKnJqZQvBHGQbhgN5io5AahSei9skmo-Ue4Ajph3MVQTla8AxpoBu2t6Cxkio5E9Ni-iRSo.jpg?quality=96&as=32x35,48x53,72x80,108x120,160x177,240x266,360x399,480x532,540x599,640x710,720x799,1080x1198,1127x1250&from=bu&u=6oapMmyPt-XPHfzTH0FMEBXUDSaUVX7sSyjnv2ltFpQ&cs=1127x0
     preview: https://sun9-77.userapi.com/impf/9DBjw3cRO_7tnRf3lQ6nngWfYe8Ss1BDoU7Axg/HJmfjiNtuh4.jpg?size=1920x768&quality=95&crop=0,0,1920,767&sign=af377dfebf909c17b6d7999f39250ba9&c_uniq_tag=4oG7z9O1simVs5TqSMKd975VnxgBs0Tc7yvAgWaiZkY&type=cover_group
-    links: { vk: https://vk.com/orika_art, tg: https://t.me/orika_art }
+    links: { vk: https://vk.com/orika_art, tg: https://t.me/orika_art, boosty: https://boosty.to/orika }
 
   - name: SHONI AGITA
     status: open
     logo: https://sun9-84.userapi.com/s/v1/ig2/TCQC6LpSrH_oFMveBec2f1C1yF4OyKgSbKDW9h4pr2ktWW0xkdqGDvrNsW627X6MWlLfqUv6Iv87hsG8w3kATbdK.jpg?quality=96&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,886x886&from=bu&u=G7FT9jZqCk8C_Vg3ck5omoLfI1o1xOuVd4yBzc5LX2w&cs=886x0
     preview:  https://sun9-73.userapi.com/impf/WYdNKoA12F2lzXlRGf1ADzLjqTxAl5MwH2VmLA/jZhTQoWxoIo.jpg?size=1920x768&quality=95&crop=0,0,1920,767&sign=22d2558fb6c1ae5a9fbc9850a69d6722&c_uniq_tag=Qqvu3hpFEmwJgyTwHeiP1vDeN2yj85PVz3STEesoLWE&type=cover_group
-    links: { vk: https://vk.com/shoniagita }
+    links: { vk: https://vk.com/shoniagita, tg: https://t.me/shoniagita_art, boosty: https://boosty.to/shoniagita, twitter: https://twitter.com/ShoniAgita, furaffinity: https://www.furaffinity.net/user/shoniagita, twitch: https://www.twitch.tv/shoniagita }
 
   - name: nezunayu
     status: unknown
     logo: https://sun9-83.userapi.com/s/v1/ig2/7WZJIE3whwqm7G59iLxiyCbrgpLKDj7tsXdR30_5U0TdCzhhVNbiJG8PVaoXGws5FK8x4NS6RVZzeAarlY5g97KD.jpg?quality=96&as=32x48,48x71,72x107,108x161,160x238,240x358,360x536,480x715,537x800&from=bu&u=IDdxA1yej11n20BHePmOAdTGieUQR7UwnovmrVYLsmg&cs=537x0
     preview: https://sun9-15.userapi.com/impf/saXqrCq6pwY_puYwNcemfNWY000LLi5czzYhsA/RQfe0j0_cGo.jpg?size=1920x768&quality=95&crop=0,115,913,364&sign=2a9ecbf2ce8661c116f208f25fc84a12&c_uniq_tag=VVuvU1DCZNckKgnGKAUldaeR6iMxPbe2I8giBKTis1I&type=cover_group
-    links: { vk: https://vk.com/shiranai }
+    links: { vk: https://vk.com/shiranai, instagram: https://www.instagram.com/nezunayu/, pixiv: https://www.pixiv.net/en/users/5579351, twitter: https://twitter.com/nezunayu }
 
   - name: puhhhel
     status: open
@@ -136,7 +137,7 @@ artists:
     status: open
     logo: leonzo/logo.jpg
     preview: leonzo/preview.jpg
-    links: { tg: https://t.me/leonzo1 }
+    links: { vk: https://vk.com/leonzo030, tg: https://t.me/leonzo1, deviantart: https://deviantart.com/leonzo030, boosty: https://boosty.to/leonzo, patreon: https://www.patreon.com/LEONZO, x: https://x.com/LeonzoUlyana }
 
   - name: Weeping Cat
     status: open
@@ -148,19 +149,19 @@ artists:
     status: closed
     logo: https://sun9-27.userapi.com/s/v1/ig2/iZimmmVWRwbTuyOVMRMnoQpfWQTYflchNJfL8HgDj2OocH1pqbLKQHFgM3nakBtwdxYu-Va5VA8KhnY3lrz-qkTQ.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x479,540x539,640x639,720x719,1080x1079,1280x1278,1440x1438,2560x2557&from=bu&u=vWqwIBK13iKwLzHwlV4CdDYZbDgTMsDx6apuzAqxu5o&cs=2560x0
     preview: https://sun9-75.userapi.com/impf/mYM-idwtsTA1OHPKowYCdcKx-N6ZDLLA85Uarw/mvQwTJ7IFXw.jpg?size=1920x768&quality=95&crop=34,483,2553,1020&sign=aeeadebf1285c5982fb09820f7c3043f&c_uniq_tag=lwsUHJ0JCV1m23TxP2cNEJJcVgs6W1SgCsX0Rc8p15Y&type=cover_group
-    links: { vk: https://vk.com/mifiya }
+    links: { vk: https://vk.com/mifiya, deviantart: http://mifiya.deviantart.com/ }
 
   - name: redgras
     status: closed
     logo: https://sun9-78.userapi.com/s/v1/ig2/iKmfOWO7jFoRv6AAsndErKKF8HFm-QpkXAAHK2iydDZaHCneDW-1sVzzxIkjmWmUwiS1jQsaOnr3MjmEbkhfgvos.jpg?quality=95&as=32x45,48x68,72x102,108x153,160x226,240x340,360x510,480x679,540x764,640x906,720x1019,1080x1529,1280x1812,1440x2038,1526x2160&from=bu&u=RZ-fkNXZTsEhU6JDBTcJs4JwFz_yDGlrvhe6jonCALk&cs=1526x0
     preview: https://sun9-76.userapi.com/impf/tVl8MDgZqaNe-qxVbPmXNXYWonRTorw-GMVjVA/T38WjXetx3c.jpg?size=1920x768&quality=95&crop=0,460,2560,1022&sign=a6b7f2c500610c31b31b591e5eb3f420&c_uniq_tag=eVTokvV1RJJlK1ufyVEJhR3dWNLhXcReg0nMZ_DtKCQ&type=cover_group
-    links: { vk: https://vk.com/redgras, tg: https://t.me/redgras_art }
+    links: { vk: https://vk.com/redgras, tg: https://t.me/redgras_art, x: https://x.com/REDGRAS_ART, discord: https://discord.gg/QJKCpQ33jS, boosty: https://boosty.to/redgras, tiktok: https://www.tiktok.com/@redgras_art, pixiv: https://www.pixiv.net/en/users/75999846, deviantart: https://www.deviantart.com/red-gras, bluesky: https://bsky.app/profile/redgras.bsky.social }
 
   - name: Нейроме
     status: open
     logo: https://sun9-34.userapi.com/s/v1/ig2/0HStD7OByUmqVp5GGmcAVWJw7hbo9w82dT2etKlc2pYOU3mQiFNmo-5LHZzrtnYy9HM64h1aiZCk4PiZYeVmF15J.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1440x1440,1920x1920&from=bu&u=dHM0AN98EDKXOcABxszRRquiVOTIOFLs0kqHOy3788k&cs=1920x0
     preview: https://sun9-64.userapi.com/GuSFNPaNjdSL6ZLFj8ZF5dCVvUOv4aKql354TA/7uO4IRvarII.jpg
-    links: { vk: https://vk.com/neural_knight, tg: https://t.me/NeuromeSFW }
+    links: { vk: https://vk.com/neural_knight, tg: https://t.me/RangvenOasis }
 
   - name: whale dream (Соля арт)
     status: open
