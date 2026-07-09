@@ -1,0 +1,35 @@
+# Список полезной литературы по писательскому мастерству и программированию,
+# разбитый по категориям. Раздел /literature.
+#
+# Каждая категория:
+#   - name: Название категории
+#     items:
+#       - title: Название книги/статьи
+#         url: Ссылка (необязательно — без неё запись отображается просто текстом)
+
+categories:
+  - name: Писательское мастерство
+    items:
+      - title: Нора Галь — «Слово живое и мёртвое»
+      - title: Лотман Ю. М. — «Структура художественного текста»
+      - title: Родари Дж. — «Грамматика фантазии»
+      - title: Блейк Снайдер — «Спасите котика! И другие секреты сценарного мастерства»
+        url: "https://www.ozon.ru/search/?brand_was_predicted=true&from_global=true&text=%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D1%82%D0%B5+%D0%BA%D0%BE%D1%82%D0%B8%D0%BA%D0%B0%21+%D0%98+%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5+%D1%81%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B+%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%B0"
+      - title: "Уильям Индик — «Психология для сценаристов: Построение конфликта в сюжете»"
+      - title: Юрий Окунев — «Последняя ошибка начинающего писателя»
+        url: https://www.livelib.ru/book/1004039836-poslednyaya-oshibka-nachinayuschego-pisatelya-yurij-okunev
+      - title: Кэти Уэйланд — «Создание арки персонажа»
+      - title: Уильям Зинсер — «Как писать хорошо»
+        url: https://www.ozon.ru/product/kak-pisat-horosho-klassicheskoe-rukovodstvo-po-sozdaniyu-nehudozhestvennyh-tekstov-20407373/
+      - title: Сид Филд — «Сценарий. Основы сценарного мастерства»
+        url: https://www.koob.ru/fild_sid/scenari_fild
+      - title: Линда Сегер — «Как хороший сценарий сделать великим»
+      - title: "Роберт Макки — «Диалог: Искусство слова для писателей, сценаристов и драматургов»"
+      - title: «Литературная Мастерская» — сборник статей по писательскому мастерству
+        url: https://litmasters.ru/category/pisatelskoe-masterstvo
+  - name: Программирование
+    items:
+      - title: Майкл Доусон — «Программируем на Python»
+        url: "https://ru.pdfdrive.com/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D1%83%D0%B5%D0%BC-%D0%BD%D0%B0-python-d165896207.html"
+      - title: Эрик Мэтиз — «Изучаем Python»
+        url: https://www.ozon.ru/product/izuchaem-python-programmirovanie-igr-vizualizatsiya-dannyh-veb-prilozheniya-138132785/
