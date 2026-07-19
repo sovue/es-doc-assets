@@ -13,9 +13,12 @@ resources:
   - name: Пионерское наследие
     url: https://vk.com/everlasting_legacy
     note: Паблик ВКонтакте
-  - name: СОВ 2025
+  - name: СОВ
     url: https://vk.com/openspeechcom
     note: Паблик ВКонтакте
-  - name: ПАЗ-410 // БОТ // Бесконечное лето // Мастерская
+  - name: "ПАЗ-410 :: CHANNEL 410hz :: Бесконечное лето"
     url: https://vk.com/paz410
     note: Паблик ВКонтакте
+  - name: 🔥 У КОСТРА 🔥
+    url: t.me/piobonfire
+    note: Телеграм-канал
