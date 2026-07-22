@@ -705,7 +705,7 @@ ambience:
     catacombs_stones: 'Катакомбы, осыпающиеся камни, необработанный вариант'
 
 music:
-    '410': 'Трек «410»'
+    '410': '410'
     a_promise_from_distant_days: 'A Promise From Distant Days'
     a_promise_from_distant_days_v2: 'A Promise From Distant Days (v2)'
     afterword: 'Afterword'
@@ -778,5 +778,5 @@ music:
     you_won_t_let_me_down: "You Won't Let Me Down"
     your_bright_side: 'Your Bright Side'
     # — необъявленные файлы —
-    kostry (файл): 'Kostry (файл)'
+    kostry (файл): 'Kostry'
     miku_song_learn1: 'Miku Song Learn 1'
