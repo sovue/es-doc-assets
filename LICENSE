@@ -1,3 +1,36 @@
+===============================================================================
+                    ОБЛАСТЬ ДЕЙСТВИЯ / SCOPE OF THIS LICENSE
+===============================================================================
+
+RU
+--
+
+    Текст GNU GPL v3, приведённый ниже, распространяется ТОЛЬКО на
+    материалы, созданные участниками этого репозитория.
+
+    Каталог game/ под действие этой лицензии НЕ подпадает. Он содержит
+    ресурсы игры «Бесконечное лето» (Everlasting Summer), права на которые
+    принадлежат Soviet Games. Условия их использования см. в NOTICE.md.
+
+    Совместное размещение этих материалов в одном репозитории является
+    простым объединением (mere aggregation) в смысле раздела 5 GNU GPL v3
+    и не распространяет условия GPL на game/.
+
+EN
+--
+
+    The GNU GPL v3 text below applies ONLY to material authored by the
+    contributors of this repository.
+
+    It does NOT apply to the game/ directory, which contains assets of the
+    game "Everlasting Summer" owned by Soviet Games. See NOTICE.md for
+    their terms.
+
+    Keeping both in one repository is mere aggregation within the meaning
+    of section 5 of the GNU GPL v3 and does not extend the GPL to game/.
+
+===============================================================================
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
@@ -70,7 +103,7 @@ modification follow.
 
                        TERMS AND CONDITIONS
 
-  0. Definitions.
+  1. Definitions.
 
   "This License" refers to version 3 of the GNU General Public License.
 
