@@ -18,10 +18,22 @@ to underline important details
 to warn user
 :::
 
+:::danger
+**danger tag**
+
+to warn user about a hard limit or something that will break
+:::
+
 :::tip
 **tip tag**
 
 to give a tip to user
+:::
+
+:::details details tag
+**details tag**
+
+to hide long or optional content behind a clickable summary
 :::
 
 :::stub
@@ -33,4 +45,4 @@ to give a tip to user
 :::outdated
 :::
 
-:::about 1 | 2 | [3](#)
+::about 1 | 2 | [3](#)
