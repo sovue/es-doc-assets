@@ -318,13 +318,13 @@ label next_label:
     # ...
 ```
 
-1. Цвет дневного оттенка — <b style="color: #FFFFFF; background: #0006; border-radius: 8px; padding: 8px">■ #FFFFFF ■</b>.
+1. Цвет дневного оттенка — `#FFFFFF`.
 > [![Спрайт пионера](/docs/img/narration-tint-day.webp "Спрайт пионера")](/docs/img/narration-tint-day.webp)
 
-2. Цвет утреннего/вечернего оттенка — <b style="color: #EFD1FF; background: #0006; border-radius: 8px; padding: 8px">■ #EFD1FF ■</b>.
+2. Цвет утреннего/вечернего оттенка — `#EFD1FF`.
 > [![Спрайт пионера](/docs/img/narration-tint-sunset.webp "Спрайт пионера")](/docs/img/narration-tint-sunset.webp)
 
-3. Цвет ночного оттенка — <b style="color: #A0C6D1; background: #0006; border-radius: 8px; padding: 8px">■ #A0C6D1 ■</b>.
+3. Цвет ночного оттенка — `#A0C6D1`.
 > [![Спрайт пионера](/docs/img/narration-tint-night.webp "Спрайт пионера")](/docs/img/narration-tint-night.webp)
 
 :::warning
