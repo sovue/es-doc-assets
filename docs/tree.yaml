@@ -25,11 +25,17 @@
 # так группа, все статьи которой не нашлись, не оставляет после себя линию.
 
 tree: # Оставлены только переписанные или переписываемые в данный момент статьи
-  - glossary
-  - doc: narration
+  - requirements
+  - beginning
+  - heading: Базовое руководство
     children:
-      - characters
-  - audio
-  - screens
-  - RKK Project 410
+      - glossary
+      - doc: narration
+        children:
+          - characters
+      - audio
+  - heading: Продвинутое руководство
+    children:
+      - screens
+      - RKK Project 410
 
