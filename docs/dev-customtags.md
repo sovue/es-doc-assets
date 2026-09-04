@@ -163,13 +163,13 @@ text between opening and closing tags replaces description
 text^1
 other text^2
 
-1^: reference
-2^: other reference
+1^ reference
+2^ other reference
 
 ```md
 text^1
 other text^2
 
-1^: reference
-2^: other reference
+1^ reference
+2^ other reference
 ```
