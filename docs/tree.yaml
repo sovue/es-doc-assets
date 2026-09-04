@@ -30,12 +30,25 @@ tree: # Оставлены только переписанные или пере
   - heading: Базовое руководство
     children:
       - glossary
+      - first_steps
       - doc: narration
         children:
+          - images
+          - images_usage
+          - choices
+          - audio
+          - videos
+          - variables
           - characters
-      - audio
+          - code_snippets
+      - map
+      - code_examples
   - heading: Продвинутое руководство
     children:
+      - github
       - screens
+      - rpyc_rpa
+      - mobile_port
+      - custom_map
       - RKK Project 410
 

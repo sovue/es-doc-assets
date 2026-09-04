@@ -1,3 +1,8 @@
+:::wip
+:::
+
+# Создание собственной карты на примере мода «7 Дней Лета»
+
 [map_example.7z 1538562](attachment:/api/attachments.redirect?id=0b58d983-d5e4-4dd9-beb8-7a586e60ae7d)
 
 - `code/map/map.rpy` — реализация карты alt1 (обычная)
