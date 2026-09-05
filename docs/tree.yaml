@@ -50,5 +50,6 @@ tree: # Оставлены только переписанные или пере
       - rpyc_rpa
       - mobile_port
       - custom_map
+      - errors
       - RKK Project 410
 
