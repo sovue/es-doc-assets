@@ -1,5 +1,12 @@
 # API-Spezifikation des RKK Project 410 Begleitmoduls (In-Game Companion Hook)
 
+:::info
+**ANDERE SPRACHEN**
+
+Dieses Dokument ist auch auf [Russisch](/docs/RKK%20Project%20410) und [Englisch](/docs/RKK%20Project%20410.en) verfügbar.
+:::
+
+
 Das Modul **RKK Hook** fungiert als systemintegrierter Begleiter (Companion) für den **RKK Project 410 Mod-Manager**. Das Modul wird direkt mit dem Manager ausgeliefert und erfordert keine separate Installation durch den Anwender. Im mod-eigenen Auswahlmenü wird die Komponente unter der Bezeichnung **„RKK Begleiter“** (bzw. *„RKK Companion“*) geführt.
 
 Bei dieser Komponente handelt es sich **nicht** um eine eigenständige Story-Modifikation und nicht um einen Inhalt für den Steam Workshop. Eine Auslieferung der `.rpy`-Datei innerhalb Ihres eigenen Mod-Archivs ist nicht zulässig und nicht erforderlich.

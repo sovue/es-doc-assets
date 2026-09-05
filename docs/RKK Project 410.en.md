@@ -1,5 +1,12 @@
 # RKK Project 410 In-Game Companion API Specification
 
+:::info
+**OTHER LANGUAGES**
+
+This document is also available in [Russian](/docs/RKK%20Project%20410) and [German](/docs/RKK%20Project%20410.de).
+:::
+
+
 The **RKK Hook** module is an in-game companion for the **RKK Project 410 Mod Manager**. The module is bundled directly with the manager and does not require separate installation by players. In the game's modification menu, it appears as **"RKK Companion"** (or *"RKK Компаньон"*).
 
 This module is **not** a story mod and is not distributed as a standalone file on the Steam Workshop. Do not include your own copy of the `.rpy` hook file in your mod's distribution archive.
