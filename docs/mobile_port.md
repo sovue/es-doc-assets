@@ -1,4 +1,4 @@
-:::wip
+:::outdated
 :::
 
 # Портирование мода на Android с помощью ESTool

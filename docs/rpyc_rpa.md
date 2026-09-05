@@ -1,4 +1,4 @@
-:::wip
+:::outdated
 :::
 
 # Работа с RPYC и RPA файлами
