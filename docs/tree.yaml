@@ -25,23 +25,21 @@
 # так группа, все статьи которой не нашлись, не оставляет после себя линию.
 
 tree: # Оставлены только переписанные или переписываемые в данный момент статьи
-  - requirements
-  - beginning
+  - first_steps
   - heading: Базовое руководство
     children:
-      - glossary
-      - first_steps
       - doc: narration
         children:
-          - images
-          - images_usage
-          - choices
-          - audio
-          - videos
-          - variables
           - characters
-          - code_snippets
-      - map
+          - choices
+          - map
+      - variables
+      - doc: images
+        children:
+          - images_usage
+      - audio
+      - videos
+      - code_snippets
       - code_examples
   - heading: Продвинутое руководство
     children:
@@ -52,4 +50,4 @@ tree: # Оставлены только переписанные или пере
       - custom_map
       - errors
       - RKK Project 410
-
+  - glossary
