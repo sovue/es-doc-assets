@@ -1,0 +1,61 @@
+# Короткие ссылки для /redirect/<ключ>/.
+#
+# Зачем: адрес вида es-doc.ru/redirect/estool/ можно напечатать в readme мода
+# или скинуть в чат один раз, а потом менять то, куда он ведёт, правкой одной
+# строки здесь — вместо того чтобы искать все места, где старый адрес уже
+# написан.
+#
+# Ключ: латиница, цифры, `-` и `_`. Регистр не важен — /redirect/ESTool/ и
+# /redirect/estool/ ведут в одно место.
+#
+# Значение — либо сам адрес строкой:
+#
+#   estool: https://github.com/example/ESTool
+#
+# либо объект, если хочется оставить рядом заметку для следующего редактора:
+#
+#   estool:
+#     url: https://github.com/example/ESTool
+#     note: Инструмент портирования на Android
+#
+# Читается только `url`; всё остальное — комментарий для людей.
+#
+# Разрешены `http://`, `https://` и адреса внутри сайта, начинающиеся с `/`.
+# Ключ с любой другой схемой будет пропущен с предупреждением в логе — это
+# защита от `javascript:`-ссылок, которые иначе выполнялись бы в браузере
+# каждого читателя.
+
+redirects:
+
+  # ── Сам сайт ────────────────────────────────────────────────
+  docs:
+    url: /docs/
+    note: Оглавление документации
+
+  resources:
+    url: /resources/
+    note: Ресурсы игры
+
+  warpers:
+    url: /resources/original/warpers
+    note: Песочница варперов
+
+  # ── Внешние ─────────────────────────────────────────────────
+  renpy:
+    url: https://www.renpy.org/doc/html/
+    note: Официальная документация Ren'Py
+
+  renpy-ru:
+    url: https://www.renpy.org/doc/html/language_basics.html
+    note: Основы языка Ren'Py
+
+  github:
+    url: https://github.com/sovue/es-doc
+    note: Исходники сайта
+
+  issues:
+    url: https://github.com/sovue/es-doc/issues
+    note: Сообщить об ошибке в статье или на сайте
+
+  watchertest:
+    url: https://example.com/watcher
