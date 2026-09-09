@@ -28,6 +28,7 @@ tree: # Оставлены только переписанные или пере
   - first_steps
   - heading: Базовое руководство
     children:
+      - init
       - doc: narration
         children:
           - characters
