@@ -27,7 +27,7 @@
   - `avaliable.jpg` — «кликабельные» участки (idle-состояние)
   - `selected.jpg` — «подсветка» при наведении (hover)
 - `images/map/big/` — фон и маски «большой» карты (те же три файла)
-- `images/chibis/` — изображения чибиков, задаются в `store.map_chibi_7dl` и скейлятся до 40x40 при использовании в alt2, в alt1 без масштабирования
+- `images/chibis/` — изображения чибиков, задаются в `store.map_chibi_7dl` и масштабируются до 40×40 при использовании в alt2, в alt1 - без масштабирования
 
 ## Изображения
 
@@ -161,7 +161,7 @@ label map_example_sports_hall:
 
 ## Добавление своих зон и чибиков
 
-- Добавить зону: впишите её в `store.map_zones_altX` c корректным `position` и подписью `default_bg`.
+- Добавить зону: впишите её в `store.map_zones_altX` с корректным `position` и подписью `default_bg`.
 - Прокрасьте соответствующие области на `avaliable.jpg` и `selected.jpg`.
 - Добавить чибика: добавьте чибика в `store.map_chibi_7dl` (см. `code/map/map.rpy`), затем назначьте через `set_chibi_altX(zone, key)`.
 

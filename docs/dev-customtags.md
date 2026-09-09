@@ -37,14 +37,14 @@ to underline important details
 :::warning
 **warning tag**
 
-to warn user
+to warn the user
 :::
 
 ```md
 :::warning
 **warning tag**
 
-to warn user
+to warn the user
 :::
 ```
 
@@ -53,14 +53,14 @@ to warn user
 :::tip
 **tip tag**
 
-to give a tip to user
+to give a tip to the user
 :::
 
 ```md
 :::tip
 **tip tag**
 
-to give a tip to user
+to give a tip to the user
 :::
 ```
 
@@ -69,14 +69,14 @@ to give a tip to user
 :::danger
 **danger tag**
 
-to warn user about a hard limit or something that will break
+to warn the user about a hard limit or something that will break
 :::
 
 ```md
 :::danger
 **danger tag**
 
-to warn user about a hard limit or something that will break
+to warn the user about a hard limit or something that will break
 :::
 ```
 
@@ -96,7 +96,7 @@ to hide long or optional content behind a clickable summary
 :::
 ```
 
-text right after opening tag replaces block title
+text right after the opening tag replaces the block title
 
 ## stub
 
@@ -108,7 +108,7 @@ text right after opening tag replaces block title
 :::
 ```
 
-text between opening and closing tags replaces description
+text between the opening and closing tags replaces the description
 
 ## wip
 
@@ -120,7 +120,7 @@ text between opening and closing tags replaces description
 :::
 ```
 
-text between opening and closing tags replaces description
+text between the opening and closing tags replaces the description
 
 ## outdated
 
@@ -132,7 +132,7 @@ text between opening and closing tags replaces description
 :::
 ```
 
-text between opening and closing tags replaces description
+text between the opening and closing tags replaces the description
 
 ## about
 

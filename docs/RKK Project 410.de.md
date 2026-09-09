@@ -41,7 +41,7 @@ Für seltene Einzelaufrufe kann die Abfrage direkt und sicher über `getattr` er
 $ getattr(store, "rkk_note", lambda *a, **k: None)("Spieler hat Verzweigung erreicht")
 ```
 
-### Variante 2: Schnittstellen-Blindbaustein (Süddeutscher Entwicklungsstandard)
+### Variante 2: Schnittstellen-Blindbaustein (Empfohlen)
 Bei mehrfacher Schnittstellenverwendung hinterlegen Sie nachfolgenden Blindbaustein (Shim) in einer Ihrer `.rpy`-Quelldateien. Ersatzfunktionen werden ausschließlich dann deklariert, wenn die echten Begleitfunktionen fehlen. Die Ladefolge ist unerheblich: Ist der Manager installiert, überschreiben dessen Echtsystem-Funktionen die Platzhalter stets ordnungsgemäß.
 
 ```renpy
@@ -130,7 +130,7 @@ init:
 ---
 
 ### `rkk_report_mod_title(mod_label, title)`
-Meldet den Klarnamen der Modifikation für die Bibliotheksanzeige des Managers ein. Dies ist erforderlich, wenn der Wert in `mods[...]` dynamisch über Variablen oder Lokalisierungsaufrufe `_()` gebildet wird und daher vom statischen Parser des Managers nicht ausgelesen werden kann.
+Meldet den Klarnamen der Modifikation für die Bibliotheksanzeige des Managers an. Dies ist erforderlich, wenn der Wert in `mods[...]` dynamisch über Variablen oder Lokalisierungsaufrufe `_()` gebildet wird und daher vom statischen Parser des Managers nicht ausgelesen werden kann.
 
 ```renpy
 init python:
@@ -187,7 +187,7 @@ if rkk_is_companion_available():
         action Function(rkk_open_manager)
 ```
 
-Sollte die Ausführungsdatei des Managers nicht gestartet werden können, wird ein Systemhinweis (`renpy.notify`) ausgegeben und der Spielbetrieb aufrechtgehalten.
+Sollte die Ausführungsdatei des Managers nicht gestartet werden können, wird ein Systemhinweis (`renpy.notify`) ausgegeben und der Spielbetrieb aufrechterhalten.
 
 ---
 
