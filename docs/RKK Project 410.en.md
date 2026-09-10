@@ -6,7 +6,6 @@
 This document is also available in [Russian](/docs/RKK%20Project%20410) and [German](/docs/RKK%20Project%20410.de).
 :::
 
-
 The **RKK Hook** module is an in-game companion for the **RKK Project 410 Mod Manager**. The module is bundled directly with the manager and does not require separate installation by players. In the game's modification menu, it appears as **"RKK Companion"** (or *"RKK Компаньон"*).
 
 This module is **not** a story mod and is not distributed as a standalone file on the Steam Workshop. Do not include your own copy of the `.rpy` hook file in your mod's distribution archive.
@@ -35,6 +34,7 @@ To track session state, capture crash dumps, and handle seamless transitions bet
 ## Ensuring Compatibility (Shims)
 
 ### Method 1: One-Off Calls
+
 For occasional API calls, use a safe lookup via `getattr`:
 
 ```renpy
@@ -42,6 +42,7 @@ $ getattr(store, "rkk_note", lambda *a, **k: None)("Player reached a storyline b
 ```
 
 ### Method 2: Compatibility Shim (Recommended)
+
 If your mod calls the API frequently, add the following shim block to one of your project's `.rpy` files. Dummy functions are created only when the actual companion functions are absent. Load order does not matter: if the manager is installed, its live functions will always take precedence over the dummy definitions.
 
 ```renpy
@@ -83,6 +84,7 @@ init -1500 python:
 ## API Reference
 
 ### `rkk_note(text, tag=None)`
+
 Logs a lightweight event marker (breadcrumb) to the current session timeline and crash dump. Captures the message string, timestamp, and current script label. Notes **are not written** to a separate log file on disk.
 
 ```renpy
@@ -99,6 +101,7 @@ $ rkk_note("Player died at the cafeteria", tag="death")
 ---
 
 ### `rkk_set_context(key, value)` / `rkk_get_context()`
+
 Sets or retrieves persistent key-value tags for the active session. Unlike one-off `rkk_note` entries, context key-value pairs persist until explicitly changed or cleared. To delete a key, pass `None` or an empty string as the `value`.
 
 ```renpy
@@ -117,6 +120,7 @@ $ current_context = rkk_get_context()
 ---
 
 ### `rkk_report_mod_version(mod_label, version)`
+
 Registers your mod's version string with the companion to correlate error reports. Should be called once during initialization. The `mod_label` identifier must match the key used to register your mod in the global `mods[...]` dictionary.
 
 ```renpy
@@ -130,6 +134,7 @@ init:
 ---
 
 ### `rkk_report_mod_title(mod_label, title)`
+
 Registers a human-readable display title for the manager's library view. Use this when the value in `mods[...]` is generated dynamically (e.g., via variables or localization calls like `_()`), which prevents the manager's static parser from reading the title directly from the file.
 
 ```renpy
@@ -146,6 +151,7 @@ init:
 ---
 
 ### `rkk_get_active_mods()`
+
 Returns a `{mod_label: version}` dictionary containing all mods that invoked `rkk_report_mod_version` in the current session. Useful for performing soft-dependency and cross-mod compatibility checks at runtime without requiring launcher UI support.
 
 ```renpy
@@ -157,6 +163,7 @@ if "another_mod" in active_versions:
 ---
 
 ### `rkk_is_companion_available()` / `rkk_companion_info()`
+
 Used to verify companion availability and retrieve metadata before rendering custom UI elements. `rkk_is_companion_available()` returns `True` if `hook.ini` exists and the configured manager binary path is valid.
 
 ```renpy
@@ -179,6 +186,7 @@ When the hook is not loaded, these functions return `False` and `{"available": F
 ---
 
 ### `rkk_open_manager()`
+
 Saves and exports session state, launches the RKK Project 410 Mod Manager, and terminates the game process. Call this function only after verifying availability with `rkk_is_companion_available()`.
 
 ```renpy
@@ -192,6 +200,7 @@ If the manager binary cannot be launched, a `renpy.notify` toast is displayed an
 ---
 
 ### `rkk_visual_poll_reload()`
+
 A developer helper for the Visual Author tool (not intended for story code). Checks for a `.rkk_visual_reload` stamp file in the `game/` folder or root project directory. If present, it deletes the stamp file and invokes `renpy.reload_script()`. Returns `True` if a reload was triggered, otherwise `False`.
 
 ---

@@ -29,7 +29,8 @@ label |Название лэйбла|:
 Во избежание конфликтов имя каждого лэйбла должно быть уникальным и отличаться от всех остальных.
 В больших модах название лэйбла часто состоит из названия сцены или номера дня/главы/эпизода/прочего и постфикса или префикса в виде короткого названия мода.  
 Пример:
-```
+
+```text
 mymod_day2
 ↑     ↑ Название сцены
 │ Префикс (в виде названия мода)
@@ -40,6 +41,7 @@ day2_mymod
 ↑    ↑ Постфикс (в виде названия мода)
 │ Название сцены
 ```
+
 :::
 
 :::danger
@@ -158,6 +160,7 @@ label start:
 label next_label:
     "Следующий лэйбл" # А после этой команды ничего нет, и игрока вернёт в главное меню
 ```
+
 :::
 
 ## Вывод реплик
@@ -216,9 +219,10 @@ label next_label:
 
 Получится:
 
-```
+```text
 Я и не думал, что такое может быть.Но это может быть.
 ```
+
 :::
 
 ## Отображение и скрытие диалоговых окон
@@ -282,25 +286,28 @@ label next_label:
 Функции и соответствующий им интерфейс:
 
 1. Пролог (`$ prolog_time()`)
+
 > [![Диалоговое окно](/resource/raw/images/gui/dialogue_box/prologue/dialogue_box.png "Диалоговое окно")](/resource/raw/images/gui/dialogue_box/prologue/dialogue_box.png)
 [![Стрелка назад](/resource/raw/images/gui/dialogue_box/prologue/backward_idle.png "Стрелка назад")](/resource/raw/images/gui/dialogue_box/prologue/backward_idle.png)
 [![Стрелка вперёд](/resource/raw/images/gui/dialogue_box/prologue/forward_idle.png "Стрелка вперёд")](/resource/raw/images/gui/dialogue_box/prologue/forward_idle.png)
 
 2. День (`$ day_time()`)
+
 > [![Диалоговое окно](/resource/raw/images/gui/dialogue_box/day/dialogue_box.png "Диалоговое окно")](/resource/raw/images/gui/dialogue_box/day/dialogue_box.png)
 [![Стрелка назад](/resource/raw/images/gui/dialogue_box/day/backward_idle.png "Стрелка назад")](/resource/raw/images/gui/dialogue_box/day/backward_idle.png)
 [![Стрелка вперёд](/resource/raw/images/gui/dialogue_box/day/forward_idle.png "Стрелка вперёд")](/resource/raw/images/gui/dialogue_box/day/forward_idle.png)
 
 3. Закат (`$ sunset_time()`)
+
 > [![Диалоговое окно](/resource/raw/images/gui/dialogue_box/sunset/dialogue_box.png "Диалоговое окно")](/resource/raw/images/gui/dialogue_box/sunset/dialogue_box.png)
 [![Стрелка назад](/resource/raw/images/gui/dialogue_box/sunset/backward_idle.png "Стрелка назад")](/resource/raw/images/gui/dialogue_box/sunset/backward_idle.png)
 [![Стрелка вперёд](/resource/raw/images/gui/dialogue_box/sunset/forward_idle.png "Стрелка вперёд")](/resource/raw/images/gui/dialogue_box/sunset/forward_idle.png)
 
 4. Ночь (`$ night_time()`)
+
 > [![Диалоговое окно](/resource/raw/images/gui/dialogue_box/night/dialogue_box.png "Диалоговое окно")](/resource/raw/images/gui/dialogue_box/night/dialogue_box.png)
 [![Стрелка назад](/resource/raw/images/gui/dialogue_box/night/backward_idle.png "Стрелка назад")](/resource/raw/images/gui/dialogue_box/night/backward_idle.png)
 [![Стрелка вперёд](/resource/raw/images/gui/dialogue_box/night/forward_idle.png "Стрелка вперёд")](/resource/raw/images/gui/dialogue_box/night/forward_idle.png)
-
 
 ### Изменение оттенка спрайтов
 
@@ -321,12 +328,15 @@ label next_label:
 ```
 
 1. Цвет дневного оттенка — `#FFFFFF`.
+
 > [![Спрайт пионера](/docs/img/narration-tint-day.webp "Спрайт пионера")](/docs/img/narration-tint-day.webp)
 
 2. Цвет утреннего/вечернего оттенка — `#EFD1FF`.
+
 > [![Спрайт пионера](/docs/img/narration-tint-sunset.webp "Спрайт пионера")](/docs/img/narration-tint-sunset.webp)
 
 3. Цвет ночного оттенка — `#A0C6D1`.
+
 > [![Спрайт пионера](/docs/img/narration-tint-night.webp "Спрайт пионера")](/docs/img/narration-tint-night.webp)
 
 :::warning

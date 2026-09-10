@@ -6,7 +6,6 @@
 Dieses Dokument ist auch auf [Russisch](/docs/RKK%20Project%20410) und [Englisch](/docs/RKK%20Project%20410.en) verfügbar.
 :::
 
-
 Das Modul **RKK Hook** fungiert als systemintegrierter Begleiter (Companion) für den **RKK Project 410 Mod-Manager**. Das Modul wird direkt mit dem Manager ausgeliefert und erfordert keine separate Installation durch den Anwender. Im mod-eigenen Auswahlmenü wird die Komponente unter der Bezeichnung **„RKK Begleiter“** (bzw. *„RKK Companion“*) geführt.
 
 Bei dieser Komponente handelt es sich **nicht** um eine eigenständige Story-Modifikation und nicht um einen Inhalt für den Steam Workshop. Eine Auslieferung der `.rpy`-Datei innerhalb Ihres eigenen Mod-Archivs ist nicht zulässig und nicht erforderlich.
@@ -35,6 +34,7 @@ Zur lückenlosen Sitzungserfassung, Absturzprotokollierung und nahtlosen Prozess
 ## Kompatibilitätssicherung (Schnittstellen-Blindbaustein / Shim)
 
 ### Variante 1: Einzellauf ohne Vorbereitung
+
 Für seltene Einzelaufrufe kann die Abfrage direkt und sicher über `getattr` erfolgen:
 
 ```renpy
@@ -42,6 +42,7 @@ $ getattr(store, "rkk_note", lambda *a, **k: None)("Spieler hat Verzweigung erre
 ```
 
 ### Variante 2: Schnittstellen-Blindbaustein (Empfohlen)
+
 Bei mehrfacher Schnittstellenverwendung hinterlegen Sie nachfolgenden Blindbaustein (Shim) in einer Ihrer `.rpy`-Quelldateien. Ersatzfunktionen werden ausschließlich dann deklariert, wenn die echten Begleitfunktionen fehlen. Die Ladefolge ist unerheblich: Ist der Manager installiert, überschreiben dessen Echtsystem-Funktionen die Platzhalter stets ordnungsgemäß.
 
 ```renpy
@@ -83,6 +84,7 @@ init -1500 python:
 ## API-Funktionsreferenz
 
 ### `rkk_note(text, tag=None)`
+
 Trägt eine Ablaufmarke (Breadcrumb / Spurpunkt) in den Sitzungsverlauf und in das Absturzprotokoll ein. Erfasst den Hinweistext, den Zeitstempel sowie das aktuelle Skript-Label. Die Einträge werden **nicht** als dauerhafte Logdatei auf dem Datenträger abgelegt.
 
 ```renpy
@@ -99,6 +101,7 @@ $ rkk_note("Spieler bei Kantine verstorben", tag="death")
 ---
 
 ### `rkk_set_context(key, value)` / `rkk_get_context()`
+
 Verwaltet dauerhafte Kontext-Stammdaten der aktuellen Sitzung. Im Gegensatz zu den einmaligen Ablaufmarken von `rkk_note` bleibt der Kontextwert bestehen, bis er explizit geändert oder zurückgesetzt wird. Das Übergeben von `None` oder einer leeren Zeichenkette löscht den Schlüssel.
 
 ```renpy
@@ -117,6 +120,7 @@ $ aktueller_kontext = rkk_get_context()
 ---
 
 ### `rkk_report_mod_version(mod_label, version)`
+
 Übermittelt den Versionsstand Ihrer Modifikation an das Begleitmodul zwecks Zuordnung in Fehlerprotokollen. Der Aufruf erfolgt einmalig während der Initialisierung. Die Kennung `mod_label` muss exakt mit dem Schlüssel im globalen Verzeichnis `mods[...]` übereinstimmen.
 
 ```renpy
@@ -130,6 +134,7 @@ init:
 ---
 
 ### `rkk_report_mod_title(mod_label, title)`
+
 Meldet den Klarnamen der Modifikation für die Bibliotheksanzeige des Managers an. Dies ist erforderlich, wenn der Wert in `mods[...]` dynamisch über Variablen oder Lokalisierungsaufrufe `_()` gebildet wird und daher vom statischen Parser des Managers nicht ausgelesen werden kann.
 
 ```renpy
@@ -146,6 +151,7 @@ init:
 ---
 
 ### `rkk_get_active_mods()`
+
 Liefert ein Verzeichnis des Typs `{mod_label: version}` aller Modifikationen zurück, die in der laufenden Sitzung `rkk_report_mod_version` aufgerufen haben. Dient zur Durchführung von Kompatibilitäts- und Abhängigkeitsprüfungen zur Laufzeit ohne Einbindung der Manager-Oberfläche.
 
 ```renpy
@@ -157,6 +163,7 @@ if "andere_mod" in aktive_versionen:
 ---
 
 ### `rkk_is_companion_available()` / `rkk_companion_info()`
+
 Dienen der Statusprüfung und Parameterabfrage des Begleitmoduls vor dem Aufbau eigener Benutzeroberflächen. `rkk_is_companion_available()` gibt `True` zurück, wenn die Konfigurationsdatei `hook.ini` vorhanden und der hinterlegte Manager-Pfad gültig ist.
 
 ```renpy
@@ -179,6 +186,7 @@ Bei fehlender Anbindung liefern die Funktionen `False` bzw. `{"available": False
 ---
 
 ### `rkk_open_manager()`
+
 Sichert und exportiert den Sitzungszustand, startet den RKK Project 410 Mod-Manager und beendet den Spielprozess geordnet. Der Aufruf darf erst nach erfolgreicher Prüfung mittels `rkk_is_companion_available()` ausgeführt werden.
 
 ```renpy
@@ -192,6 +200,7 @@ Sollte die Ausführungsdatei des Managers nicht gestartet werden können, wird e
 ---
 
 ### `rkk_visual_poll_reload()`
+
 Entwickler-Hilfsfunktion für das Tooling von Visual Author (nicht für den regulären Handlungsablauf vorgesehen). Prüft auf das Vorhandensein der Steuerdatei `.rkk_visual_reload` im Verzeichnis `game/` oder im Hauptordner. Bei Fund wird die Datei entfernt und `renpy.reload_script()` ausgeführt. Gibt `True` zurück, wenn ein Skript-Reload veranlasst wurde, sonst `False`.
 
 ---

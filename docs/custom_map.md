@@ -164,5 +164,3 @@ label map_example_sports_hall:
 - Добавить зону: впишите её в `store.map_zones_altX` с корректным `position` и подписью `default_bg`.
 - Прокрасьте соответствующие области на `avaliable.jpg` и `selected.jpg`.
 - Добавить чибика: добавьте чибика в `store.map_chibi_7dl` (см. `code/map/map.rpy`), затем назначьте через `set_chibi_altX(zone, key)`.
-
-
