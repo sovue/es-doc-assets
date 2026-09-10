@@ -26,78 +26,7 @@ init:
 
 [Ссылка на репозиторий](https://github.com/Tecquo/autoinit)
 
-Автоматическое объявление всех изображений и звуков мода. Полное руководство по использованию расположено в репозитории GitHub.
-
-### Пример использования
-
-Прежде всего нам необходимо создать объект класса:
-
-```renpy
-init:
-    $ autoinitialization_mymod = autoInitialization_mymod("mymod") # Создаём объект класса с mymod в качестве корневой директории мода.
-```
-
-При необходимости можем добавить постфикс для объявленных файлов или вовсе вместо объявления записывать их в отдельный файл `autoinit_assets.rpy` (чтобы объявление ресурсов, записанных в файл, сработало, необходимо перезагрузить БЛ, чтобы `rpy`-файл скомпилировался).
-
-```renpy
-init:
-    $ autoinitialization_mymod = autoInitialization_mymod("mymod", "myPostfix")
-```
-
-```renpy
-init:
-    $ autoinitialization_mymod = autoInitialization_mymod("mymod", write_into_file=True)
-```
-
-#### Изображения
-
-```renpy
-show bg ext_square_sunset # Показ изображения ext_square_sunset из папки bg
-```
-
-#### Изображения (с префиксом)
-
-```renpy
-show bg ext_square_sunset_myPostfix # Показ изображения ext_square_sunset из папки bg с префиксом mymod
-```
-
-#### Спрайты
-
-```renpy
-show ufo dress smile jewelry far # Показ спрайта персонажа ufo в одежде dress, эмоцией smile, аксессуаром jewelry и дистанцией far
-show ufo dress smile jewelry #  Показ спрайта персонажа ufo в одежде dress, эмоцией smile, аксессуаром jewelry и дистанцией normal
-show ufo dress smile jewelry close # Показ спрайта персонажа ufo в одежде dress, эмоцией smile, аксессуаром jewelry и дистанцией close
-show ufo dress smile # Показ спрайта персонажа ufo в одежде dress, эмоцией smile и дистанцией normal
-show ufo dress # Показ спрайта персонажа ufo в одежде dress и дистанцией normal
-show ufo # Показ спрайта персонажа ufo с дистанцией normal
-```
-
-#### Спрайты (с префиксом)
-
-```renpy
-show ufo_myPostfix dress smile jewelry far # Показ спрайта персонажа ufo в одежде dress, эмоцией smile, аксессуаром jewelry, дистанцией far и постфиксом myPostfix
-show ufo_myPostfix dress smile jewelry #  Показ спрайта персонажа ufo в одежде dress, эмоцией smile, аксессуаром jewelry, дистанцией normal и постфиксом myPostfix
-show ufo_myPostfix dress smile jewelry close # Показ спрайта персонажа ufo в одежде dress, эмоцией smile, аксессуаром jewelry, дистанцией close и постфиксом myPostfix
-show ufo_myPostfix dress smile # Показ спрайта персонажа ufo в одежде dress, эмоцией smile, дистанцией normal и постфиксом myPostfix
-show ufo_myPostfix dress # Показ спрайта персонажа ufo в одежде dress, дистанцией normal и постфиксом myPostfix
-show ufo_myPostfix # Показ спрайта персонажа ufo с дистанцией normal и постфиксом myPostfix
-```
-
-#### Аудио
-
-```renpy
-play sound mymusic # Воспроизведение файла mymusic на канале sound
-```
-
-#### Аудио (с префиксом)
-
-```renpy
-play sound mymusic_myPostfix # Воспроизведение файла mymusic на канале sound и постфиксом myPostfix
-```
-
-#### Заключение
-
-Если необходима дополнительная информация, каждый метод класса содержит подробные комментарии работы с примерами вызова объявленных ресурсов мода, а также в [репозитории GitHub](https://github.com/Tecquo/autoinit) есть расширенная версия руководства по использованию автоинита.
+Автоматическое объявление всех изображений и звуков мода. Полное руководство по использованию расположено в [репозитории GitHub](https://github.com/Tecquo/autoinit).
 
 ## Автоматическое объявление файлов (для начинающих)
 
