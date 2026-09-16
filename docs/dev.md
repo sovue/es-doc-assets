@@ -1,6 +1,17 @@
-# docs/dev-customtags
+# docs/dev
 
-## info
+## some sympols
+
+:::table
+name;symbols
+arrows;`↑` `↓` `←` `→`
+tiret;`—`
+bullets and squares;`∙` `◦` `▪` `▫`
+:::
+
+## tags
+
+### info
 
 :::info
 **info tag**
@@ -16,7 +27,7 @@ to add additional information
 :::
 ```
 
-## attention
+### attention
 
 :::attention
 **attention tag**
@@ -32,7 +43,7 @@ to underline important details
 :::
 ```
 
-## warning
+### warning
 
 :::warning
 **warning tag**
@@ -48,7 +59,7 @@ to warn the user
 :::
 ```
 
-## tip
+### tip
 
 :::tip
 **tip tag**
@@ -64,7 +75,7 @@ to give a tip to the user
 :::
 ```
 
-## danger
+### danger
 
 :::danger
 **danger tag**
@@ -80,7 +91,7 @@ to warn the user about a hard limit or something that will break
 :::
 ```
 
-## details
+### details
 
 :::details
 **details tag**
@@ -98,7 +109,7 @@ to hide long or optional content behind a clickable summary
 
 text right after the opening tag replaces the block title
 
-## stub
+### stub
 
 :::stub
 :::
@@ -110,7 +121,7 @@ text right after the opening tag replaces the block title
 
 text between the opening and closing tags replaces the description
 
-## wip
+### wip
 
 :::wip
 :::
@@ -122,7 +133,7 @@ text between the opening and closing tags replaces the description
 
 text between the opening and closing tags replaces the description
 
-## outdated
+### outdated
 
 :::outdated
 :::
@@ -134,7 +145,7 @@ text between the opening and closing tags replaces the description
 
 text between the opening and closing tags replaces the description
 
-## about
+### about
 
 ::about 1 | 2 | [3](#)
 
@@ -142,7 +153,7 @@ text between the opening and closing tags replaces the description
 ::about 1 | 2 | [3](#)
 ```
 
-## table
+### table
 
 :::table
 1;2;3
@@ -158,7 +169,7 @@ text between the opening and closing tags replaces the description
 :::
 ```
 
-## references
+### references
 
 text^1  
 other text^2
