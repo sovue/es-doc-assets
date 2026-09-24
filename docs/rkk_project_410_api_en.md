@@ -3,7 +3,7 @@
 :::info
 **OTHER LANGUAGES**
 
-This document is also available in [Russian](/docs/RKK%20Project%20410) and [German](/docs/RKK%20Project%20410.de).
+This document is also available in [Russian](/docs/rkk_project_410_api) and [German](/docs/rkk_project_410_api_de).
 :::
 
 The **RKK Hook** module is an in-game companion for the **RKK Project 410 Mod Manager**. The module is bundled directly with the manager and does not require separate installation by players. In the game's modification menu, it appears as **"RKK Companion"** (or *"RKK Компаньон"*).

@@ -3,7 +3,7 @@
 :::info
 **ANDERE SPRACHEN**
 
-Dieses Dokument ist auch auf [Russisch](/docs/RKK%20Project%20410) und [Englisch](/docs/RKK%20Project%20410.en) verfügbar.
+Dieses Dokument ist auch auf [Russisch](/docs/rkk_project_410_api) und [Englisch](/docs/rkk_project_410_api_en) verfügbar.
 :::
 
 Das Modul **RKK Hook** fungiert als systemintegrierter Begleiter (Companion) für den **RKK Project 410 Mod-Manager**. Das Modul wird direkt mit dem Manager ausgeliefert und erfordert keine separate Installation durch den Anwender. Im mod-eigenen Auswahlmenü wird die Komponente unter der Bezeichnung **„RKK Begleiter“** (bzw. *„RKK Companion“*) geführt.

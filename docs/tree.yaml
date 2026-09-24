@@ -26,6 +26,7 @@
 
 tree: # Оставлены только переписанные или переписываемые в данный момент статьи
   - first_steps
+  - glossary
   - heading: Базовое руководство
     children:
       - init
@@ -40,8 +41,6 @@ tree: # Оставлены только переписанные или пере
           - images_usage
       - audio
       - videos
-      - code_snippets
-      - code_examples
   - heading: Продвинутое руководство
     children:
       - stores
@@ -49,7 +48,10 @@ tree: # Оставлены только переписанные или пере
       - screens
       - rpyc_rpa
       - mobile_port
-      - custom_map
       - errors
-      - RKK Project 410
-  - glossary
+  - heading: Примеры кода
+    children:
+      - code_snippets
+      - code_examples
+      - custom_map
+      - rkk_project_410_api
