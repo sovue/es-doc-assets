@@ -4,7 +4,6 @@
 # Поля:
 #   name / platform / description / url — обязательны.
 #   action — подпись основной ссылки.
-#   contact_url / contact_label — необязательный контакт редакции/владельца.
 
 resources:
   - name: Мастерская Steam
@@ -21,8 +20,6 @@ resources:
 
   - name: Everlasting Summer Mods
     platform: Telegram
-    description: Канал с модами для игры. По публикации можно написать владельцу.
+    description: Канал с модами для игры.
     url: https://t.me/everlasting_summer_mods
     action: Открыть канал
-    contact_url: https://t.me/Alice_Dvachevskaya1
-    contact_label: Написать владельцу
