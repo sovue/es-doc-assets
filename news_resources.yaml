@@ -23,3 +23,33 @@ resources:
     description: Канал с модами для игры.
     url: https://t.me/everlasting_summer_mods
     action: Открыть канал
+
+  - name: 🔥 У КОСТРА 🔥
+    platform: Telegram
+    description: Канал публикует творчество по игре и новости о летосфере.
+    url: https://t.me/piobonfire
+    action: Открыть канал
+
+  - name: Пионерская стройка
+    platform: Telegram
+    description: Канал публикует творчество по игре, новости о летосфере и прохождения модов.
+    url: https://t.me/es_building
+    action: Открыть канал
+
+  - name: Пионерское наследие
+    platform: ВКонтакте
+    description: Группа публикует творчество по игре и новости о летосфере.
+    url: https://vk.com/everlasting_legacy
+    action: Открыть группу
+
+  - name: "ПАЗ-410 :: CHANNEL 410hz :: Бесконечное лето"
+    platform: ВКонтакте
+    description: Группа публикует творчество по игре и новости о летосфере.
+    url: https://vk.com/paz410
+    action: Открыть группу
+
+  - name: r/EverlastingSummer
+    platform: Reddit
+    description: Сабреддит публикует творчество по игре и новости о летосфере.
+    url: https://reddit.com/r/EverlastingSummer
+    action: Открыть сабреддит
