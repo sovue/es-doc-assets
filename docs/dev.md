@@ -1,6 +1,6 @@
 # docs/dev
 
-## some sympols
+## some symbols
 
 :::table
 name;symbols
@@ -140,6 +140,18 @@ text between the opening and closing tags replaces the description
 
 ```md
 :::outdated
+:::
+```
+
+text between the opening and closing tags replaces the description
+
+### old
+
+:::old
+:::
+
+```md
+:::old
 :::
 ```
 
