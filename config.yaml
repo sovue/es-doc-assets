@@ -30,6 +30,12 @@ banners:
     icon: outdated
     tone: info
 
+# Главная тема сайта на главной странице сайта
+theme-track:
+    src: /resource/community/sound/music/progress.ogg
+    artist: 140 kilograms of sex
+    title: Progress
+
 # Площадки, где проект можно поддержать деньгами. Раздел /support.
 support:
   - name: Boosty

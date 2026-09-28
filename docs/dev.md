@@ -181,6 +181,14 @@ text between the opening and closing tags replaces the description
 :::
 ```
 
+### audio
+
+::audio /resource/community/sound/music/disoul.ogg | 140 kilograms of sex - Distorted Souls
+
+```md
+::audio /resource/community/sound/music/disoul.ogg | 140 kilograms of sex - Distorted Souls
+```
+
 ### references
 
 text^1  
