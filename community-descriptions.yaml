@@ -1,0 +1,10 @@
+# Необязательные подписи к файлам в community/. Ключ — путь от community/.
+# Для добавления файла в каталог запись здесь не нужна.
+# title — название в списке и плеере; description — пояснение;
+# captions — любые дополнительные строки под описанием.
+# Музыка без title отображается в плеере как /resource/community/<путь>.
+
+music/progress.ogg:
+  title: 'Progress'
+  captions:
+    - 'Автор: 140 kilograms of sex'
