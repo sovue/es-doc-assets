@@ -57,5 +57,21 @@ redirects:
     url: https://github.com/sovue/es-doc/issues
     note: Сообщить об ошибке в статье или на сайте
 
+  # ------------------------------------------------------------
+
+  vk:
+    url: https://vk.ru/sovue
+    note: Группа ВКонтакте
+
+  tg:
+    url: https://t.me/sovue_esdoc
+    note: Канал в Telegram
+
+  dm:
+    url: https://t.me/sovue_esdoc?direct
+    note: Связаться с разработчиками напрямую
+
+  # ── Тестировочные ───────────────────────────────────────────
+
   watchertest:
     url: https://example.com/watcher
