@@ -4,7 +4,10 @@
 #   - name: Название категории
 #     items:
 #       - title: Название материала
-#         url: Ссылка (необязательно — без неё запись отображается просто текстом)
+#         url: Прямая ссылка на чтение (необязательно)
+#         url_label: Читать онлайн (необязательно — иначе ссылка в названии)
+#         access: Полный текст или Фрагмент (необязательно)
+#         files: Список путей относительно materials/ или объектов {path, label}
 #         description: Краткое пояснение (необязательно)
 #     sections:
 #       - name: Вложенный раздел
@@ -42,9 +45,13 @@ categories:
           - name: Книги
             items:
               - title: Майкл Доусон — «Программируем на Python»
-                url: "https://ru.pdfdrive.com/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D1%83%D0%B5%D0%BC-%D0%BD%D0%B0-python-d165896207.html"
+                url: https://djvu.online/file/bacIjSel17Ser
+                url_label: Читать онлайн
+                access: Полный текст
               - title: Эрик Мэтиз — «Изучаем Python»
-                url: https://www.ozon.ru/product/izuchaem-python-programmirovanie-igr-vizualizatsiya-dannyh-veb-prilozheniya-138132785/
+                url: https://royallib.com/read/metiz_erik/izuchaem_python_programmirovanie_igr_vizualizatsiya_dannih_vebprilogeniya.html
+                url_label: Читать онлайн
+                access: Полный текст
   - name: Писательское мастерство
     sections:
       - name: Полезные сайты
@@ -54,17 +61,46 @@ categories:
       - name: Книги
         items:
           - title: Нора Галь — «Слово живое и мёртвое»
+            url: https://www.vavilon.ru/noragal/slovo.html
+            url_label: Читать онлайн
+            access: Полный текст
           - title: Лотман Ю. М. — «Структура художественного текста»
+            url: https://mybook.ru/author/yurij-lotman-2/struktura-hudozhestvennogo-teksta/read/
+            url_label: Читать онлайн
+            access: Полный текст
           - title: Родари Дж. — «Грамматика фантазии»
+            url: https://libcat.ru/knigi/detskaya-literatura/prochaya-detskaya-literatura/160838-dzhanni-rodari-grammatika-fantazii-vvedenie-v-iskusstvo-pridumyvaniya-istorij.html
+            url_label: Читать онлайн
+            access: Полный текст
           - title: Блейк Снайдер — «Спасите котика! И другие секреты сценарного мастерства»
-            url: "https://www.ozon.ru/search/?brand_was_predicted=true&from_global=true&text=%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D1%82%D0%B5+%D0%BA%D0%BE%D1%82%D0%B8%D0%BA%D0%B0%21+%D0%98+%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5+%D1%81%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D1%8B+%D1%81%D1%86%D0%B5%D0%BD%D0%B0%D1%80%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%B0"
+            url: https://libcat.ru/knigi/dokumentalnye-knigi/publicistika/screenplays/140364-blejk-snajder-spasite-kotika-i-drugie-sekrety-scenarnogo-masterstva.html
+            url_label: Читать онлайн
+            access: Полный текст
           - title: "Уильям Индик — «Психология для сценаристов: Построение конфликта в сюжете»"
+            url: https://mybook.ru/author/uilyam-indik/psihologiya-dlya-scenaristov-postroenie-konflikta/read/
+            url_label: Читать онлайн
+            access: Полный текст
           - title: Юрий Окунев — «Последняя ошибка начинающего писателя»
-            url: https://www.livelib.ru/book/1004039836-poslednyaya-oshibka-nachinayuschego-pisatelya-yurij-okunev
+            url: https://knizhonka.com/read-book/poslednyaya-oshibka-nachinayushchego-pisatelya-yuriy-okunev.html
+            url_label: Читать онлайн
+            access: Полный текст
           - title: Кэти Уэйланд — «Создание арки персонажа»
+            url: https://mybook.ru/author/keti-uejland/sozdanie-arki-personazha/read/
+            url_label: Читать онлайн
+            access: Полный текст
           - title: Уильям Зинсер — «Как писать хорошо»
-            url: https://www.ozon.ru/product/kak-pisat-horosho-klassicheskoe-rukovodstvo-po-sozdaniyu-nehudozhestvennyh-tekstov-20407373/
+            url: https://www.litres.ru/book/uilyam-zinser/kak-pisat-horosho-18560214/chitat-onlayn/
+            url_label: Читать онлайн
+            access: Фрагмент
           - title: Сид Филд — «Сценарий. Основы сценарного мастерства»
-            url: https://www.koob.ru/fild_sid/scenari_fild
+            url: https://www.phantastike.com/cinema/scenari_fild/pdf/
+            url_label: Читать PDF
+            access: Полный текст
           - title: Линда Сегер — «Как хороший сценарий сделать великим»
+            url: https://dramafond.ru/wp-content/uploads/2014/11/как_хороший_сценарий_сделать_великим.pdf
+            url_label: Читать PDF
+            access: Полный текст
           - title: "Роберт Макки — «Диалог: Искусство слова для писателей, сценаристов и драматургов»"
+            url: https://mybook.ru/author/robert-makki/dialog-iskusstvo-slova-dlya-pisatelej-scenaristov/read/
+            url_label: Читать онлайн
+            access: Полный текст
