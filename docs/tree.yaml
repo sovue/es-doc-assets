@@ -41,6 +41,7 @@ tree: # Оставлены только переписанные или пере
           - images_usage
       - audio
       - videos
+      - conflicts
   - heading: Продвинутое руководство
     children:
       - stores
@@ -51,6 +52,7 @@ tree: # Оставлены только переписанные или пере
       - errors
   - heading: Примеры кода
     children:
+      - autoinit
       - code_snippets
       - code_examples
       - custom_map
