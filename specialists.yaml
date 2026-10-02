@@ -1,380 +1,371 @@
 # Специалисты для модов «Бесконечного лета» — страница /specialists.
-# Все участники и примеры работ хранятся в этом файле.
+# Каждый раздел содержит отдельные профили своей категории.
+# Один человек может быть указан в нескольких разделах: статус, контакты,
+# описание, превью и примеры работ у таких профилей независимы.
 #
-# Обязательные поля: name, categories.
-# categories: artists / ai-artists / coders / composers / writers.
-# У одного специалиста может быть несколько категорий.
+# Обязательное поле профиля: name.
 # status: open / closed / unknown (по умолчанию unknown).
 # links: контакты и площадки автора, например vk, tg, github, site.
 # tg / telegram: "@username", https://t.me/username, tg://resolve?domain=username
 # или tg://user?id=123456789 (числовой ID). Username в параметре id
 # преобразуется в https://t.me/username. Значение с @ заключайте в кавычки.
-# logo: прямая http(s)-ссылка или путь относительно specialists/.
-# works: примеры работ, у каждого type, title и url либо file.
+# logo: необязательный аватар — http(s)-ссылка или путь относительно specialists/.
+# Без logo или при ошибке загрузки аватара показывается первая буква имени.
+# preview: необязательное изображение карточки, задаётся отдельно от works.
+# description: необязательный текст профиля (многострочный текст: |).
+# Без preview показывается заглушка с первой буквой имени; без description
+# блок описания не показывается и не занимает места.
+# works: примеры работ, у каждого type, необязательный title и url либо file.
+# Превью не выбирается из works и не добавляется в примеры автоматически.
 #
 # Типы примеров:
 #   artists, ai-artists — art (арт / изображение)
-#   composers — track (прямой аудиофайл, показываются не более двух)
 #   coders — mod, project
+#   composers — track (прямой аудиофайл, показываются не более двух)
 #   writers — mod, fanfic
 #
-# Изображения и треки можно положить в папку specialists/ рядом с docs/:
-# file указывается относительно этой папки, без specialists/ в начале.
-# Для модов, проектов и фанфиков используйте url страницы работы.
-# Примеры ниже только описывают формат и не появляются на сайте.
+# Все локальные файлы хранятся в папке specialists/ репозитория ассетов.
+# В url, file, logo и preview укажите путь относительно неё, без specialists/.
+# Например teromioset/preview.jpg доступен по /specialists/res/teromioset/preview.jpg.
+# Поддерживаются http(s)-ссылки и ссылки от корня сайта, например /redirect/github.
 #
-# - name: Имя художника
-#   categories: [artists]
-#   status: open
-#   links: {vk: "https://vk.com/example"}
-#   works:
-#     - {type: art, title: Лагерь вечером, file: example/camp.webp}
-#
-# - name: Имя нейрохудожника
-#   categories: [ai-artists]
-#   works:
-#     - {type: art, title: Авторский фон, url: "https://example.com/background.webp"}
-#
-# - name: Имя композитора
-#   categories: [composers]
-#   status: open
-#   links: {tg: "https://t.me/example"}
-#   works:
-#     - {type: track, title: Тема лагеря, file: example/camp.ogg}
-#     - {type: track, title: Ночной трек, url: "https://example.com/night.mp3"}
-#
-# - name: Имя автора
-#   categories: [coders, writers]
-#   links: {github: "https://github.com/example"}
-#   works:
-#     - {type: mod, title: Название мода, url: "https://example.com/mod"}
-#     - {type: project, title: Название проекта, url: "https://example.com/project"}
-#     - {type: fanfic, title: Название фанфика, url: "https://example.com/story"}
+# Пример отдельного профиля (не появляется на сайте):
+# specialists:
+#   artists:
+#     - name: Имя автора
+#       status: open
+#       preview: example/camp.webp
+#       description: Рисую фоны и персонажей.
+#       links: {vk: "https://vk.com/example"}
+#       works:
+#         - {type: art, title: Лагерь вечером, url: example/camp.webp}
+#   composers:
+#     - name: Имя автора
+#       status: closed
+#       works:
+#         - {type: track, title: Тема лагеря, file: example/camp.ogg}
 
 specialists:
-  - name: artsam
-    categories: [artists]
-    status: open
-    logo: artsam/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: artsam/preview.jpg
-    links:
-      vk: https://vk.com/club198785439
-      behance: https://www.behance.net/arttssam
+  # Художники
+  artists:
+    - name: artsam
+      status: open
+      logo: artsam/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: artsam/preview.jpg
+      links:
+        vk: https://vk.com/club198785439
+        behance: https://www.behance.net/arttssam
+      preview: artsam/preview.jpg
+    - name: BJLT
+      status: unknown
+      logo: bjlt/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: bjlt/preview.jpg
+      links:
+        vk: https://vk.com/bomjjack
+        tg: https://t.me/jackbomj
+        twitter: https://twitter.com/BomjJack
+        deviantart: https://www.deviantart.com/jackybomjik
+        tumblr: https://bomjjack.tumblr.com/
+      preview: bjlt/preview.jpg
+    - name: BeTry
+      status: open
+      logo: betry/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: betry/preview.jpg
+      links:
+        vk: https://vk.com/betryy
+        boosty: https://boosty.to/betry
+      preview: betry/preview.jpg
+    - name: CreppyLandau
+      status: open
+      logo: creppylandau/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: creppylandau/preview.jpg
+      links:
+        vk: https://vk.com/creppylandau1
+      preview: creppylandau/preview.jpg
+    - name: EreeSt studio
+      status: open
+      logo: ereest/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: ereest/preview.jpg
+      links:
+        vk: https://vk.com/ereeststudio
+        tg: https://t.me/EreeStStudioA
+        boosty: https://boosty.to/ereest
+        discord: https://discord.gg/r3pQWjRJZa
+      preview: ereest/preview.jpg
+    - name: Himbeere
+      status: unknown
+      logo: himbeere/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: himbeere/preview.jpg
+      links:
+        vk: https://vk.com/himbeere79
+      preview: himbeere/preview.jpg
+    - name: KiriK
+      status: unknown
+      logo: kirik/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: kirik/preview.jpg
+      links:
+        vk: https://vk.com/kirik_arts
+        tg: https://t.me/+XYwC8XiDk74yMTMy
+        discord: https://discord.com/invite/JP55WmU
+        boosty: https://boosty.to/kirik_arts
+      preview: kirik/preview.jpg
+    - name: LEONZO
+      status: open
+      logo: leonzo/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: leonzo/preview.jpg
+      links:
+        vk: https://vk.com/leonzo030
+        tg: https://t.me/leonzo1
+        deviantart: https://deviantart.com/leonzo030
+        boosty: https://boosty.to/leonzo
+        patreon: https://www.patreon.com/LEONZO
+        x: https://x.com/LeonzoUlyana
+      preview: leonzo/preview.jpg
+    - name: nezunayu
+      status: unknown
+      logo: nezunayu/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: nezunayu/preview.jpg
+      links:
+        vk: https://vk.com/shiranai
+        instagram: https://www.instagram.com/nezunayu/
+        pixiv: https://www.pixiv.net/en/users/5579351
+        twitter: https://twitter.com/nezunayu
+      preview: nezunayu/preview.jpg
+    - name: puhhhel
+      status: open
+      logo: puhhhel/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: puhhhel/preview.jpg
+      links:
+        vk: https://vk.com/puhhhel
+        tg: https://t.me/puhhhel
+      preview: puhhhel/preview.jpg
+    - name: redgras
+      status: closed
+      logo: redgras/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: redgras/preview.jpg
+      links:
+        vk: https://vk.com/redgras
+        tg: https://t.me/redgras_art
+        x: https://x.com/REDGRAS_ART
+        discord: https://discord.gg/QJKCpQ33jS
+        boosty: https://boosty.to/redgras
+        tiktok: https://www.tiktok.com/@redgras_art
+        pixiv: https://www.pixiv.net/en/users/75999846
+        deviantart: https://www.deviantart.com/red-gras
+        bluesky: https://bsky.app/profile/redgras.bsky.social
+      preview: redgras/preview.jpg
+    - name: SHONI AGITA
+      status: open
+      logo: shoniagita/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: shoniagita/preview.jpg
+      links:
+        vk: https://vk.com/shoniagita
+        tg: https://t.me/shoniagita_art
+        boosty: https://boosty.to/shoniagita
+        twitter: https://twitter.com/ShoniAgita
+        furaffinity: https://www.furaffinity.net/user/shoniagita
+        twitch: https://www.twitch.tv/shoniagita
+      preview: shoniagita/preview.jpg
+    - name: shwwma
+      status: open
+      logo: shwwma/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: shwwma/preview.jpg
+      links:
+        vk: https://vk.com/shwwma
+        boosty: https://boosty.to/mtsleepykingdom
+        discord: https://discord.gg/8AFpJmz7KB
+        twitch: https://www.twitch.tv/shwwma
+        artstation: https://www.artstation.com/shwwma
+        deviantart: https://www.deviantart.com/marktailor
+      preview: shwwma/preview.jpg
+    - name: Sweet and crazy art
+      status: open
+      logo: sweetandcrazyart/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: sweetandcrazyart/preview.jpg
+      links:
+        vk: https://vk.com/club194639783
+      preview: sweetandcrazyart/preview.jpg
+    - name: teromioset.
+      status: unknown
+      logo: teromioset/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: teromioset/preview.jpg
+      links:
+        vk: https://vk.com/teromioset
+      preview: teromioset/preview.jpg
+    - name: Weeping Cat
+      status: open
+      logo: weepingcat/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: weepingcat/preview.jpg
+      links:
+        vk: https://vk.com/weepingcat
+      preview: weepingcat/preview.jpg
+    - name: whale dream (Соля арт)
+      status: open
+      logo: art_solya/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: art_solya/preview.jpg
+      links:
+        vk: https://vk.com/art_solya
+      preview: art_solya/preview.jpg
+    - name: Мифия
+      status: closed
+      logo: mifiya/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: mifiya/preview.jpg
+      links:
+        vk: https://vk.com/mifiya
+        deviantart: http://mifiya.deviantart.com/
+      preview: mifiya/preview.jpg
+    - name: Орика
+      status: unknown
+      logo: orika/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: orika/preview.jpg
+      links:
+        vk: https://vk.com/orika_art
+        tg: https://t.me/orika_art
+        boosty: https://boosty.to/orika
+      preview: orika/preview.jpg
+    - name: Тупое название -_-
+      status: open
+      logo: isumisenpai/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: isumisenpai/preview.jpg
+      links:
+        vk: https://vk.com/isumisenpai
+      preview: isumisenpai/preview.jpg
+    - name: хлам
+      status: unknown
+      logo: publicsvalka/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: publicsvalka/preview.jpg
+      links:
+        vk: https://vk.com/publicsvalka
+      preview: publicsvalka/preview.jpg
 
-  - name: BJLT
-    categories: [artists]
-    status: unknown
-    logo: bjlt/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: bjlt/preview.jpg
-    links:
-      vk: https://vk.com/bomjjack
-      tg: https://t.me/jackbomj
-      twitter: https://twitter.com/BomjJack
-      deviantart: https://www.deviantart.com/jackybomjik
-      tumblr: https://bomjjack.tumblr.com/
+  # Нейрохудожники
+  ai-artists:
+    - name: Нейроме
+      status: open
+      logo: neural_knight/logo.jpg
+      works:
+        - type: art
+          title: Пример арта
+          file: neural_knight/preview.jpg
+      links:
+        vk: https://vk.com/neural_knight
+        tg: https://t.me/RangvenOasis
+      preview: neural_knight/preview.jpg
 
-  - name: BeTry
-    categories: [artists]
-    status: open
-    logo: betry/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: betry/preview.jpg
-    links:
-      vk: https://vk.com/betryy
-      boosty: https://boosty.to/betry
+  # Кодеры
+  coders:
+    - name: poi
+      status: closed
+      links:
+        vk: https://vk.ru/itsmlg
+        tg: https://t.me/PerpetuaPetua
+        steam: https://steamcommunity.com/id/cringybongy/
+      works:
+        - type: project
+          title: ES Doc
+          url: /redirect/github
+        - type: mod
+          title: Пионериада
+          url: https://steamcommunity.com/sharedfiles/filedetails/?id=2585264824
+        - type: project
+          title: Автоинит
+          url: https://github.com/somepoi/autoinit
+    - name: 140 kilograms of sex
+      status: closed
+      logo: ohfkgsofsex/logo.png
+      preview: ohfkgsofsex/preview.png
+      links:
+        vk: https://vk.ru/ohfkgsofsex
+        tg: https://t.me/ohfkgsofsex
+        steam: https://steamcommunity.com/id/ohfkgsofsex/
+      works:
+        - type: project
+          title: ES Doc
+          url: /redirect/github
+        - type: mod
+          title: Главный Атрибут Пионера
+          url: https://steamcommunity.com/sharedfiles/filedetails/?id=3315269977
 
-  - name: CreppyLandau
-    categories: [artists]
-    status: open
-    logo: creppylandau/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: creppylandau/preview.jpg
-    links:
-      vk: https://vk.com/creppylandau1
+  # Композиторы
+  composers:
+    - name: 140 kilograms of sex
+      status: closed
+      logo: ohfkgsofsex/logo.png
+      preview: ohfkgsofsex/preview.png
+      links:
+        vk: https://vk.ru/ohfkgsofsex
+        tg: https://t.me/ohfkgsofsex
+        steam: https://steamcommunity.com/id/ohfkgsofsex/
+      works:
+        - type: track
+          title: Progress
+          url: /resource/community/sound/music/progress.ogg
+        - type: track
+          title: incelthread
+          url: /resource/community/sound/music/incelthread.ogg
 
-  - name: EreeSt studio
-    categories: [artists]
-    status: open
-    logo: ereest/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: ereest/preview.jpg
-    links:
-      vk: https://vk.com/ereeststudio
-      tg: https://t.me/EreeStStudioA
-      boosty: https://boosty.to/ereest
-      discord: https://discord.gg/r3pQWjRJZa
-
-  - name: Himbeere
-    categories: [artists]
-    status: unknown
-    logo: himbeere/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: himbeere/preview.jpg
-    links:
-      vk: https://vk.com/himbeere79
-
-  - name: KiriK
-    categories: [artists]
-    status: unknown
-    logo: kirik/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: kirik/preview.jpg
-    links:
-      vk: https://vk.com/kirik_arts
-      tg: https://t.me/+XYwC8XiDk74yMTMy
-      discord: https://discord.com/invite/JP55WmU
-      boosty: https://boosty.to/kirik_arts
-
-  - name: LEONZO
-    categories: [artists]
-    status: open
-    logo: leonzo/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: leonzo/preview.jpg
-    links:
-      vk: https://vk.com/leonzo030
-      tg: https://t.me/leonzo1
-      deviantart: https://deviantart.com/leonzo030
-      boosty: https://boosty.to/leonzo
-      patreon: https://www.patreon.com/LEONZO
-      x: https://x.com/LeonzoUlyana
-
-  - name: nezunayu
-    categories: [artists]
-    status: unknown
-    logo: nezunayu/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: nezunayu/preview.jpg
-    links:
-      vk: https://vk.com/shiranai
-      instagram: https://www.instagram.com/nezunayu/
-      pixiv: https://www.pixiv.net/en/users/5579351
-      twitter: https://twitter.com/nezunayu
-
-  - name: puhhhel
-    categories: [artists]
-    status: open
-    logo: puhhhel/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: puhhhel/preview.jpg
-    links:
-      vk: https://vk.com/puhhhel
-      tg: https://t.me/puhhhel
-
-  - name: redgras
-    categories: [artists]
-    status: closed
-    logo: redgras/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: redgras/preview.jpg
-    links:
-      vk: https://vk.com/redgras
-      tg: https://t.me/redgras_art
-      x: https://x.com/REDGRAS_ART
-      discord: https://discord.gg/QJKCpQ33jS
-      boosty: https://boosty.to/redgras
-      tiktok: https://www.tiktok.com/@redgras_art
-      pixiv: https://www.pixiv.net/en/users/75999846
-      deviantart: https://www.deviantart.com/red-gras
-      bluesky: https://bsky.app/profile/redgras.bsky.social
-
-  - name: SHONI AGITA
-    categories: [artists]
-    status: open
-    logo: shoniagita/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: shoniagita/preview.jpg
-    links:
-      vk: https://vk.com/shoniagita
-      tg: https://t.me/shoniagita_art
-      boosty: https://boosty.to/shoniagita
-      twitter: https://twitter.com/ShoniAgita
-      furaffinity: https://www.furaffinity.net/user/shoniagita
-      twitch: https://www.twitch.tv/shoniagita
-
-  - name: shwwma
-    categories: [artists]
-    status: open
-    logo: shwwma/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: shwwma/preview.jpg
-    links:
-      vk: https://vk.com/shwwma
-      boosty: https://boosty.to/mtsleepykingdom
-      discord: https://discord.gg/8AFpJmz7KB
-      twitch: https://www.twitch.tv/shwwma
-      artstation: https://www.artstation.com/shwwma
-      deviantart: https://www.deviantart.com/marktailor
-
-  - name: Sweet and crazy art
-    categories: [artists]
-    status: open
-    logo: sweetandcrazyart/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: sweetandcrazyart/preview.jpg
-    links:
-      vk: https://vk.com/club194639783
-
-  - name: teromioset.
-    categories: [artists]
-    status: unknown
-    logo: teromioset/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: teromioset/preview.jpg
-    links:
-      vk: https://vk.com/teromioset
-
-  - name: Weeping Cat
-    categories: [artists]
-    status: open
-    logo: weepingcat/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: weepingcat/preview.jpg
-    links:
-      vk: https://vk.com/weepingcat
-
-  - name: whale dream (Соля арт)
-    categories: [artists]
-    status: open
-    logo: art_solya/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: art_solya/preview.jpg
-    links:
-      vk: https://vk.com/art_solya
-
-  - name: Мифия
-    categories: [artists]
-    status: closed
-    logo: mifiya/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: mifiya/preview.jpg
-    links:
-      vk: https://vk.com/mifiya
-      deviantart: http://mifiya.deviantart.com/
-
-  - name: Орика
-    categories: [artists]
-    status: unknown
-    logo: orika/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: orika/preview.jpg
-    links:
-      vk: https://vk.com/orika_art
-      tg: https://t.me/orika_art
-      boosty: https://boosty.to/orika
-
-  - name: "Тупое название -_-"
-    categories: [artists]
-    status: open
-    logo: isumisenpai/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: isumisenpai/preview.jpg
-    links:
-      vk: https://vk.com/isumisenpai
-
-  - name: хлам
-    categories: [artists]
-    status: unknown
-    logo: publicsvalka/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: publicsvalka/preview.jpg
-    links:
-      vk: https://vk.com/publicsvalka
-
-# --------------------------------------------------------------
-
-  - name: Нейроме
-    categories: [ai-artists]
-    status: open
-    logo: neural_knight/logo.jpg
-    works:
-      - type: art
-        title: Пример арта
-        file: neural_knight/preview.jpg
-    links:
-      vk: https://vk.com/neural_knight
-      tg: https://t.me/RangvenOasis
-
-# --------------------------------------------------------------
-
-  - name: poi
-    categories: [coders]
-    status: closed
-    links:
-      vk: https://vk.ru/itsmlg
-      tg: https://t.me/PerpetuaPetua
-      steam: https://steamcommunity.com/id/cringybongy/
-    works:
-      - type: project
-        title: Пионериада
-        url: https://steamcommunity.com/sharedfiles/filedetails/?id=2585264824
-      - type: project
-        title: Автоинит
-        url: https://github.com/somepoi/autoinit
-
-  - name: 140 kilograms of sex
-    categories: [coders, composers]
-    status: closed
-    logo: ohfkgsofsex/logo.png
-    preview: ohfkgsofsex/preview.png
-    links:
-      vk: https://vk.ru/ohfkgsofsex
-      tg: https://t.me/ohfkgsofsex
-      steam: https://steamcommunity.com/id/ohfkgsofsex/
-    works:
-      - type: project
-        title: ES Doc
-        url: /redirect/github
-      - type: mod
-        title: Главный Атрибут Пионера
-        url: https://steamcommunity.com/sharedfiles/filedetails/?id=3315269977
-      - type: track
-        title: Progress
-        url: /resource/community/sound/music/progress.ogg
-      - type: track
-        title: incelthread
-        url: /resource/community/sound/music/incelthread.ogg
+  # Сценаристы
+  writers: []
