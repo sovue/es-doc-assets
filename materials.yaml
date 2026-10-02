@@ -54,6 +54,10 @@ categories:
                 access: Полный текст
   - name: Писательское мастерство
     sections:
+      - name: Статьи про сюжет
+        items:
+          - title: Канон «Бесконечного лета» - его особенности, мифы и заблуждения
+            url: https://steamcommunity.com/sharedfiles/filedetails/?id=3495950377
       - name: Полезные сайты
         items:
           - title: «Литературная Мастерская» — сборник статей по писательскому мастерству

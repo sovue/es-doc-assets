@@ -323,6 +323,7 @@ specialists:
         vk: https://vk.ru/itsmlg
         tg: https://t.me/PerpetuaPetua
         steam: https://steamcommunity.com/id/cringybongy/
+        github: https://github.com/somepoi
       works:
         - type: project
           title: ES Doc
@@ -337,10 +338,11 @@ specialists:
       status: closed
       logo: ohfkgsofsex/logo.png
       preview: ohfkgsofsex/preview.png
+      description: '"Могу помочь советом. Если нужно - напишите мне."'
       links:
-        vk: https://vk.ru/ohfkgsofsex
         tg: https://t.me/ohfkgsofsex
         steam: https://steamcommunity.com/id/ohfkgsofsex/
+        github: https://github.com/ohfkgsofsex
       works:
         - type: project
           title: ES Doc
@@ -356,9 +358,9 @@ specialists:
       logo: ohfkgsofsex/logo.png
       preview: ohfkgsofsex/preview.png
       links:
-        vk: https://vk.ru/ohfkgsofsex
         tg: https://t.me/ohfkgsofsex
         steam: https://steamcommunity.com/id/ohfkgsofsex/
+        github: https://github.com/ohfkgsofsex
       works:
         - type: track
           title: Progress
