@@ -108,7 +108,7 @@ specialists:
         discord: https://discord.gg/r3pQWjRJZa
       preview: ereest/preview.jpg
     - name: Himbeere
-      status: unknown
+      status: open
       logo: himbeere/logo.jpg
       works:
         - type: art
@@ -118,12 +118,13 @@ specialists:
         vk: https://vk.com/himbeere79
       preview: himbeere/preview.jpg
     - name: KiriK
-      status: unknown
+      status: closed
       logo: kirik/logo.jpg
       works:
         - type: art
           title: Пример арта
           file: kirik/preview.jpg
+      description: '"Заказы принимаются у меня только когда об этом уведомляю я сам у себя специальным постом в группе ВК/в Телеге/в Дискорде. В другом случае вы можете написать лично мне в ЛС и мы обсудим возможность для вас сделать заказ."'
       links:
         vk: https://vk.com/kirik_arts
         tg: https://t.me/+XYwC8XiDk74yMTMy
@@ -269,7 +270,7 @@ specialists:
         deviantart: http://mifiya.deviantart.com/
       preview: mifiya/preview.jpg
     - name: Орика
-      status: unknown
+      status: closed
       logo: orika/logo.jpg
       works:
         - type: art
@@ -291,8 +292,9 @@ specialists:
         vk: https://vk.com/isumisenpai
       preview: isumisenpai/preview.jpg
     - name: хлам
-      status: unknown
+      status: closed
       logo: publicsvalka/logo.jpg
+      description: '"Заказы закрыты, но если предложение интересное, то обсуждается в сообщениях группы."'
       works:
         - type: art
           title: Пример арта
