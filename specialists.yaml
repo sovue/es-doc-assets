@@ -188,6 +188,19 @@ specialists:
         deviantart: https://www.deviantart.com/red-gras
         bluesky: https://bsky.app/profile/redgras.bsky.social
       preview: redgras/preview.jpg
+    - name: Schnoodle
+      status: open
+      logo: schnoodleus/logo.png
+      works:
+        - type: art
+          title: Пример арта
+          file: schnoodleus/preview.png
+      links:
+        tg: https://t.me/nuttymcnutkins
+        furaffinity: https://www.furaffinity.net/user/schnoodleus
+        tumblr: https://www.tumblr.com/schnoodleus
+        bluesky: https://bsky.app/profile/schn00dl3us.bsky.social
+      preview: schnoodleus/preview.png
     - name: SHONI AGITA
       status: open
       logo: shoniagita/logo.jpg
