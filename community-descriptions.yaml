@@ -30,6 +30,11 @@ sound/ambience/oldBuildingWind.ogg:
   captions:
     - 'Из модификации Distorted Souls'
 
+sound/music/140khz.ogg:
+  title: '140 kilograms of sex — 140kHz (Full ver.)'
+  captions:
+    - 'Композиция из модификации Distorted Souls'
+    - 'Перед использованием спросите разрешение у автора'
 sound/music/disoul.ogg:
   title: '140 kilograms of sex — Distorted Souls'
   captions:
@@ -44,4 +49,9 @@ sound/music/progress.ogg:
   title: '140 kilograms of sex — Progress'
   captions:
     - 'Главная тема этого сайта'
+    - 'Перед использованием спросите разрешение у автора'
+sound/music/uprising.ogg:
+  title: '140 kilograms of sex — Uprising'
+  captions:
+    - 'Композиция из модификации Distorted Souls'
     - 'Перед использованием спросите разрешение у автора'
