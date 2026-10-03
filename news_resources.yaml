@@ -12,16 +12,16 @@ resources:
     url: https://steamcommunity.com/app/331470/workshop/
     action: Открыть мастерскую
 
-  - name: Бесконечное лето
-    platform: Telegram
-    description: Канал публикует моды.
-    url: https://t.me/beskon_leto
-    action: Открыть канал
+  - name: Бесконечное Лето / Soviet Games
+    platform: ВКонтакте
+    description: Официальная группа разработчиков игры в ВКонтакте.
+    url: https://vk.ru/everlasting.summer.official
+    action: Открыть группу
 
-  - name: Everlasting Summer Mods
+  - name: Soviet Games
     platform: Telegram
-    description: Канал с модами для игры.
-    url: https://t.me/everlasting_summer_mods
+    description: Официальный канал разработчиков игры в Telegram.
+    url: https://t.me/SovietGamesVNS
     action: Открыть канал
 
   - name: 🔥 У КОСТРА 🔥
@@ -36,10 +36,22 @@ resources:
     url: https://t.me/es_building
     action: Открыть канал
 
+  - name: 𝔼𝕧𝕖𝕣𝕝𝕒𝕤𝕥𝕚𝕟𝕘 𝕤𝕦𝕞𝕞𝕖𝕣 🍃
+    platform: Telegram
+    description: Канал публикует творчество по игре и новости о летосфере.
+    url: https://t.me/beskon_leto
+    action: Открыть канал
+
   - name: Бесконечный Овердоз
     platform: Telegram
     description: Канал публикует творчество по игре и новости о летосфере.
     url: https://t.me/summeroverdose
+    action: Открыть канал
+
+  - name: Моды бесконечное лето - everlasting summer mods. android
+    platform: Telegram
+    description: Канал публикует моды по игре.
+    url: https://t.me/everlasting_summer_mods
     action: Открыть канал
 
   - name: Пионерское наследие
