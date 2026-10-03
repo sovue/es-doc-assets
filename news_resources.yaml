@@ -36,6 +36,12 @@ resources:
     url: https://t.me/es_building
     action: Открыть канал
 
+  - name: Бесконечный Овердоз
+    platform: Telegram
+    description: Канал публикует творчество по игре и новости о летосфере.
+    url: https://t.me/summeroverdose
+    action: Открыть канал
+
   - name: Пионерское наследие
     platform: ВКонтакте
     description: Группа публикует творчество по игре и новости о летосфере.
