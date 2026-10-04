@@ -29,6 +29,8 @@ sound/ambience/oldBuildingWind.ogg:
   title: 'Старый лагерь внутри'
   captions:
     - 'Из модификации Distorted Souls'
+sound/ambience/rain.ogg:
+  title: 'Дождь'
 
 sound/music/140khz.ogg:
   title: '140 kilograms of sex — 140kHz (Full ver.)'
