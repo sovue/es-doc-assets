@@ -1,7 +1,10 @@
-name: Deploy assets
+name: CI and Deploy
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -10,21 +13,22 @@ permissions:
 
 jobs:
   deploy:
-    name: Update site assets
+    name: Deploy to production
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: test
     runs-on: ubuntu-24.04
     environment: production
     concurrency:
-      group: es-doc-assets-production
+      group: es-doc-production
       cancel-in-progress: false
     steps:
-      - name: Update content volume on server
+      - name: Update server and rebuild containers
         env:
           DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
           DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
           DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
           DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
-          ASSETS_SHA: ${{ github.sha }}
         shell: bash
         run: |
           set -Eeuo pipefail
@@ -34,7 +38,6 @@ jobs:
           : "${DEPLOY_PATH:?DEPLOY_PATH is required}"
           : "${DEPLOY_SSH_KEY:?DEPLOY_SSH_KEY is required}"
           : "${DEPLOY_KNOWN_HOSTS:?DEPLOY_KNOWN_HOSTS is required}"
-          [[ "${ASSETS_SHA}" =~ ^[0-9a-f]{40}$ ]] || { echo 'Invalid assets commit SHA' >&2; exit 1; }
 
           key_file="${RUNNER_TEMP}/es-doc-deploy-key"
           known_hosts_file="${RUNNER_TEMP}/es-doc-known-hosts"
@@ -53,34 +56,25 @@ jobs:
             'bash -se' <<DEPLOY
           set -Eeuo pipefail
           cd -- $(printf '%q' "${DEPLOY_PATH}")
+          cd ..
+          cd es-doc-assets
+          git checkout main
+          git fetch origin main
+          git reset --hard origin/main
+          git pull
+          cd ..
+          cp -r ./es-doc-assets/* es-doc/content/
+          cd es-doc
           # Serialize application and assets deployments across both repositories.
           exec 9>.deploy.lock
           flock -x 9
-
-          docker compose --env-file .env.production -f docker-compose.yml config --volumes | grep -Fxq es-doc-content || {
-            echo 'Deploy the es-doc content-volume commit before updating assets.' >&2
-            exit 1
-          }
-
-          docker compose --env-file .env.production -f docker-compose.yml run --rm --no-deps --user root --entrypoint bash -e ASSETS_REF=${ASSETS_SHA} web -se <<'ASSETS'
+          git checkout main
+          git fetch origin main
+          git reset --hard origin/main
+          git pull
           set -Eeuo pipefail
-          # This updates the shared content volume, not the application image.
-          git -c safe.directory=/app/content -C /app/content init -q -b "\${ASSETS_BRANCH}"
-          if git -c safe.directory=/app/content -C /app/content remote get-url origin >/dev/null 2>&1; then
-            test "\$(git -c safe.directory=/app/content -C /app/content remote get-url origin)" = "\${ASSETS_REPO}"
-          else
-            git -c safe.directory=/app/content -C /app/content remote add origin "\${ASSETS_REPO}"
-          fi
-          git -c safe.directory=/app/content -C /app/content fetch --depth=1 origin "\${ASSETS_REF}"
-          git -c safe.directory=/app/content -C /app/content reset --hard FETCH_HEAD
-          git -c safe.directory=/app/content -C /app/content checkout -B "\${ASSETS_BRANCH}"
-          git -c safe.directory=/app/content -C /app/content update-ref "refs/remotes/origin/\${ASSETS_BRANCH}" HEAD
-          git -c safe.directory=/app/content -C /app/content branch --set-upstream-to="origin/\${ASSETS_BRANCH}"
-          chown -R app:app /app/content
           # Bind mounts retain host permissions; app must read static files and templates.
-          chmod -R a+rX /app/static /app/templates
-          ASSETS
-
+          chmod -R a+rX ./static ./templates
           docker compose --env-file .env.production -f docker-compose.yml up -d --no-build --force-recreate --wait --wait-timeout 180 || {
             docker compose --env-file .env.production -f docker-compose.yml logs --tail=100
             exit 1
