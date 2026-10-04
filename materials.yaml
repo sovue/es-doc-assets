@@ -24,7 +24,7 @@ categories:
           - title: Документация Ren'Py
             url: https://www.renpy.org/doc/html/
             description: Оригинальная документация.
-      - name: Не полезные инструменты
+      - name: Полезные инструменты
         items:
           - title: Action Editor
             url: https://github.com/kyouryuukunn/renpy-ActionEditor3
