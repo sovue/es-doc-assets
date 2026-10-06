@@ -102,6 +102,7 @@ init -9999 python:
 
 Для декодирования `rpyc`-файлов вы можете воспользоваться:
 
+- [Инструментом ES Doc для декомпиляции RPYC](/tools?mode=unrpyc)
 - [UnRen](https://f95zone.to/threads/unren-bat-v1-0-11d-rpa-extractor-rpyc-decompiler-console-developer-menu-enabler.3083/)
 - [UnRpyc](https://github.com/CensoredUsername/unrpyc)
 - [Game Resources Viewer](https://gameresourcesviewer.ru/tab/rpyc-decompiler-online)
@@ -133,6 +134,7 @@ init -9999 python:
 
 Для декодирования `rpa`-файлов вы можете воспользоваться:
 
+- [Инструментом ES Doc для распаковки RPA](/tools?mode=unrpa)
 - [UnRen](https://f95zone.to/threads/unren-bat-v1-0-11d-rpa-extractor-rpyc-decompiler-console-developer-menu-enabler.3083/)
 - [UnRpa](https://insertx2k.itch.io/unrpa-commander-amd64)
 - [RPATool](https://github.com/Shizmob/rpatool)

@@ -24,20 +24,6 @@ categories:
           - title: Документация Ren'Py
             url: https://www.renpy.org/doc/html/
             description: Оригинальная документация.
-      - name: Полезные инструменты
-        items:
-          - title: Action Editor
-            url: https://github.com/kyouryuukunn/renpy-ActionEditor3
-            description: >-
-              Визуальный редактор. Позволяет настроить сцену прямо в игре и скопировать готовый код.
-          - title: Галерея мододела
-            url: https://steamcommunity.com/sharedfiles/filedetails/?id=2433461897
-            description: >-
-              Конструктор сцен для «Бесконечного лета».
-          - title: Road to Glory for Modmakers
-            url: https://steamcommunity.com/sharedfiles/filedetails/?id=617591839
-            description: >-
-              Обучающий мод для «Бесконечного лета» с уроками по Ren'Py и Python, а также конструктором сцен.
       - name: Python
         sections:
           - name: Видеолекции
