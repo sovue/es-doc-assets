@@ -37,7 +37,7 @@ redirects:
     note: Ресурсы игры
 
   warpers:
-    url: /resources/original/warpers
+    url: /tools/warpers
     note: Песочница варперов
 
   # ── Внешние ─────────────────────────────────────────────────
