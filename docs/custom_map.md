@@ -3,7 +3,7 @@
 
 # Создание собственной карты на примере мода «7 Дней Лета»
 
-[map_example.7z 1538562](attachment:/api/attachments.redirect?id=0b58d983-d5e4-4dd9-beb8-7a586e60ae7d)
+[map_example.7z (заглушка)](/materials/download/articles/custom_map/map_example.7z)
 
 - `code/map/map.rpy` — реализация карты alt1 (обычная)
 - `code/map/map_big.rpy` — реализация карты alt2 (большая)

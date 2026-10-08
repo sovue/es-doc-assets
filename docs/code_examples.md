@@ -29,7 +29,7 @@ init:
 
 ## Автоматическое объявление файлов (для начинающих)
 
-[autoinitialization_noob.rpy 1446](attachment:/api/attachments.redirect?id=fd079820-6fa8-423d-9aa5-265f72693d09)
+[autoinitialization_noob.rpy (заглушка)](/materials/download/articles/code_examples/autoinitialization_noob.rpy)
 
 Данный отрезок кода автоматически объявляет все изображения и звуки вашего мода.
 
@@ -67,7 +67,7 @@ init:
 
 ## Автоматическое объявление персонажей и интересные плюшки
 
-[characters.rpy 4461](attachment:/api/attachments.redirect?id=036e8cc1-c057-4810-a5f2-e45b93efe53d)
+[characters.rpy (заглушка)](/materials/download/articles/code_examples/characters.rpy)
 
 Позволяет автоматически объявить персонажей с БЛ-like стилем текста, исключая возможность создания конфликтов с другими модами. Не забудьте заменить `mymod` на свой вариант.
 
@@ -211,7 +211,7 @@ label mymod:
 
 ## Эффект падающих частиц
 
-[snow.rpy 5376](attachment:/api/attachments.redirect?id=fbcdb04a-7440-42a4-8b61-ce4669013f0f)
+[snow.rpy (заглушка)](/materials/download/articles/code_examples/snow.rpy)
 
 В коде игры уже предусмотрено использование частиц - снега. Имеются два варианта:
 
@@ -382,9 +382,9 @@ label test_label:
 
 ## Создание собственной карты
 
-[map.rpy 12044](attachment:/api/attachments.redirect?id=96dec3d5-054e-4f9c-9a3f-fdcb51096d7c)
+[map.rpy (заглушка)](/materials/download/articles/code_examples/map.rpy)
 
-[map.zip 2474372](attachment:/api/attachments.redirect?id=aabcba4d-80bd-4a78-af19-b222ecd775ab)
+[map.zip (заглушка)](/materials/download/articles/code_examples/map.zip)
 
 Если вам недостаточно мест в оригинальной карте или вам необходима своя карта для мода, то с помощью этого кода можно её создать. В архиве с ресурсами используется версия оригинальной карты со всеми зонами.
 
@@ -440,7 +440,7 @@ label label_of_house:
 
 ## Создание собственной карты (для начинающих)
 
-[map_noob.rpy 1929](attachment:/api/attachments.redirect?id=a64ba6ca-d8cc-4716-b4a7-867695848080)
+[map_noob.rpy (заглушка)](/materials/download/articles/code_examples/map_noob.rpy)
 
 В исходном коде игры и во многих модах можно увидеть похожий код для использования карты внутри игры. Но этот метод достаточно сложен в понимании для новичка. Поэтому далее будет показан пример кода для использования карты в вашей модификации.
 
@@ -560,7 +560,7 @@ label screen_map_error_place:
 
 ## Замена интерфейса
 
-[interface.rpy 3102](attachment:/api/attachments.redirect?id=3d53216e-004d-45b6-88e3-dbd4b5fa8a03)
+[interface.rpy (заглушка)](/materials/download/articles/code_examples/interface.rpy)
 
 Под интерфейсом предполагаются внутриигровые экраны, с которыми взаимодействует пользователь, такие как:
 
@@ -630,7 +630,7 @@ action [(Function(my_mod_screens_diact)), MainMenu(False)]
 
 ## Создание галереи
 
-[gallery.rpy 5326](attachment:/api/attachments.redirect?id=1a20f2cd-1b0f-4ce3-a0d2-bb596578a926)
+[gallery.rpy (заглушка)](/materials/download/articles/code_examples/gallery.rpy)
 
 Код представляет собой полноценную галерею, поделённую на 2 раздела — иллюстрации (CG) и фоны (BG).
 
@@ -810,7 +810,7 @@ text pages:
 
 ## Перевод мода
 
-[translate.rpy 1453](attachment:/api/attachments.redirect?id=4adaedf8-52da-4d33-9f00-af5f41e16e21)
+[translate.rpy (заглушка)](/materials/download/articles/code_examples/translate.rpy)
 
 Нижеприведённый код позволит перевести ваш мод на другие языки. В примере показан перевод на английский.
 
@@ -938,7 +938,7 @@ label translator_mod:
 
 ## Интеграция Live2D
 
-[live2d.rpy 1337536](attachment:/api/attachments.redirect?id=f65ce1a7-b96f-4ec4-a36b-b5ca26219fc5)
+[live2d.rpy (заглушка)](/materials/download/articles/code_examples/live2d.rpy)
 
 Позволяет интегрировать Live2D в БЛ без необходимости что-либо докачивать. DLL с Live2D автоматически устанавливается в папку `Everlasting Summer/lib/Ваша_ОС`. Поддерживаются Windows, Linux, Mac и, возможно, Android и Web.
 
@@ -1031,7 +1031,7 @@ init:
 
 ## Интеграция Python-модулей
 
-[moduleInstaller.rpy 4189](attachment:/api/attachments.redirect?id=d1edea00-a8a5-4013-8183-e376f4475c41)
+[moduleInstaller.rpy (заглушка)](/materials/download/articles/code_examples/moduleInstaller.rpy)
 
 Позволяет устанавливать сторонние Python-модули в ваш мод.
 
@@ -1076,7 +1076,7 @@ init python:
 
 ## Показ всех объявленных персонажей
 
-[characterExport.rpy 564](attachment:/api/attachments.redirect?id=79d876b6-d7ef-496a-88bb-b9dabfc56390)
+[characterExport.rpy (заглушка)](/materials/download/articles/code_examples/characterExport.rpy)
 
 Записывает всех существующих персонажей в БЛ в файл `characters.txt` (который автоматически создаётся в главной директории БЛ) и открывает его.
 

@@ -36,11 +36,13 @@ tree: # Оставлены только переписанные или пере
           - choices
           - variables
           - map
+          - transitions
       - doc: images
         children:
           - images_usage
       - audio
       - videos
+      - text_tags
       - conflicts
   - heading: Продвинутое руководство
     children:
