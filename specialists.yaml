@@ -316,31 +316,70 @@ specialists:
         vk: https://vk.com/publicsvalka
       preview: publicsvalka/preview.jpg
     - name: щукагррр
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: shukagrrr/preview.jpg
+      works:
+        - type: art
+          title: Миша с лисичкой
+          file: shukagrrr/preview.jpg
+        - type: art
+          title: Мишгоши
+          file: shukagrrr/work-2.jpg
       links:
         tg: https://t.me/shukagrrr
         vk: https://vk.com/shukagrrr
     - name: technotrailblazer
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: technotrailblazer/preview.jpg
+      works:
+        - type: art
+          title: Иллюстрация с персонажами
+          file: technotrailblazer/preview.jpg
+        - type: art
+          title: Дизайн персонажа
+          file: technotrailblazer/work-2.jpg
       links:
         tg: https://t.me/technotrailblaz1
-    - name: лейка
-      status: unknown
-      links:
-        instagram: https://www.instagram.com/emoleika/
     - name: гномаразм
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: gnomarazm/preview.jpg
+      works:
+        - type: art
+          title: Скетчи персонажа
+          file: gnomarazm/preview.jpg
+        - type: art
+          title: Динамические скетчи
+          file: gnomarazm/work-2.jpg
       links:
         tg: https://t.me/obosrak
-    - name: хе
-      status: unknown
     - name: zmisuck
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: zmisuck/preview.jpg
+      works:
+        - type: art
+          title: Дизайны персонажей
+          file: zmisuck/preview.jpg
+        - type: art
+          title: Скетчи персонажей
+          file: zmisuck/work-2.jpg
       links:
         tg: https://t.me/mefedro444
         site: https://artfight.net/~mefedro4
     - name: sair
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: sair/preview.jpg
+      works:
+        - type: art
+          title: Дверь в никуда
+          file: sair/preview.jpg
+        - type: art
+          title: Night, blooming sunflower
+          file: sair/work-2.jpg
       links:
         tg: https://t.me/sair_png
         telegram: https://t.me/deadinside2009
@@ -353,48 +392,122 @@ specialists:
         tiktok: https://www.tiktok.com/@sair.png
         pinterest: https://pin.it/5fuX9ytjd
     - name: REVA
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: reva/preview.jpg
+      works:
+        - type: art
+          title: Сила дружбы
+          file: reva/preview.jpg
+        - type: art
+          title: Боннита
+          file: reva/work-2.jpg
       links:
         tg: https://t.me/revarevaaa
         telegram: https://t.me/stabues
     - name: кариша
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: karisha/preview.jpg
+      works:
+        - type: art
+          title: Авторская маска
+          file: karisha/preview.jpg
+        - type: art
+          title: Маска на фоне гор
+          file: karisha/work-2.jpg
       links:
         tg: https://t.me/zaebatorka
         instagram: https://www.instagram.com/nagibatorka/
     - name: speedcorechan
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: speedcorechan/preview.jpg
+      works:
+        - type: art
+          title: Марла
+          file: speedcorechan/preview.jpg
+        - type: art
+          title: Аниме-портрет
+          file: speedcorechan/work-2.jpg
       links:
         tg: https://t.me/speedcorechan
         telegram: https://t.me/bossigrokov
     - name: скан-толстячок
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: scan-tolstyachok/preview.jpg
+      works:
+        - type: art
+          title: Подборка работ для маркета «Клевер»
+          file: scan-tolstyachok/preview.jpg
       links:
         tg: https://t.me/biggeradvantage
-    - name: керамик
-      status: unknown
-      links:
-        instagram: https://www.instagram.com/keramik.su/
     - name: grobikruth
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: grobikruth/preview.jpg
+      works:
+        - type: art
+          title: Кифри
+          file: grobikruth/preview.jpg
+        - type: art
+          title: Эскизы брелоков
+          file: grobikruth/work-2.jpg
       links:
         tg: https://t.me/grobikruth
         telegram: https://t.me/ruthy000
     - name: V4RTIGO
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: v4rtigo/preview.jpg
+      works:
+        - type: art
+          title: Дизайн персонажа
+          file: v4rtigo/preview.jpg
+        - type: art
+          title: Персонаж в кепке
+          file: v4rtigo/work-2.jpg
       links:
         tg: https://t.me/V4RTIGO
     - name: лили дюпре
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: lili-dupre/preview.jpg
+      works:
+        - type: art
+          title: Остров собак
+          file: lili-dupre/preview.jpg
+        - type: art
+          title: Графический рисунок
+          file: lili-dupre/work-2.jpg
       links:
-        tg: https://t.me/artartinsomnia
+        tg: https://t.me/lilidupre
     - name: саша лунти
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: sasha-lunti/preview.jpg
+      works:
+        - type: art
+          title: Авторская маска
+          file: sasha-lunti/preview.jpg
+        - type: art
+          title: Маска на прогулке
+          file: sasha-lunti/work-2.jpg
       links:
         tg: https://t.me/lunluntii
         instagram: https://www.instagram.com/lunlunti/
     - name: саш одиннадцать
-      status: unknown
+      status: open
+      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
+      preview: sash-odinnadtsat/preview.jpg
+      works:
+        - type: art
+          title: Иллюстрация для свопки
+          file: sash-odinnadtsat/preview.jpg
+        - type: art
+          title: Монохромная иллюстрация
+          file: sash-odinnadtsat/work-2.jpg
       links:
         tg: https://t.me/mollnote
 
@@ -467,6 +580,14 @@ specialists:
           url: /resource/community/sound/music/incelthread.ogg
     - name: между
       status: unknown
+      preview: mzhdu/preview.jpg
+      works:
+        - type: track
+          title: как будто (фрагмент)
+          file: mzhdu/track-1.mp3
+        - type: track
+          title: голоса (фрагмент)
+          file: mzhdu/track-2.mp3
       links:
         site: https://band.link/mzhd
         tg: https://t.me/mzhdu
@@ -475,17 +596,63 @@ specialists:
         tiktok: https://www.tiktok.com/@mzhd.band
     - name: the god syndrome
       status: unknown
+      preview: the-god-syndrome/preview.jpg
+      works:
+        - type: track
+          title: In Your Thoughts (фрагмент)
+          file: the-god-syndrome/track-1.mp3
+        - type: track
+          title: Trip for Your Mind (фрагмент)
+          file: the-god-syndrome/track-2.mp3
       links:
         site: https://band.link/thegodsyndrome
         tg: https://t.me/thegodsyndrome_band
         vk: https://vk.com/thegodsyndrome_band
     - name: проспект энергетиков.
       status: unknown
+      preview: prospekt-energetikov/preview.jpg
+      works:
+        - type: track
+          title: кружка латте (фрагмент)
+          file: prospekt-energetikov/track-1.mp3
+        - type: track
+          title: в москве сегодня солнечно (фрагмент)
+          file: prospekt-energetikov/track-2.mp3
       links:
         site: https://band.link/o1KMI
         tg: https://t.me/pospect
         vk: https://vk.com/energetic_prospekt
         tiktok: https://www.tiktok.com/@prospektenergeticov
+
+    - name: лейка
+      status: unknown
+      preview: leika/preview.jpg
+      works:
+        - type: track
+          title: я скоро приду (фрагмент)
+          file: leika/track-1.mp3
+        - type: track
+          title: Winter 2006 (фрагмент)
+          file: leika/track-2.mp3
+      links:
+        tg: https://t.me/emoleika
+        site: https://band.link/emoleika
+        vk: https://vk.com/emoleika
+        instagram: https://www.instagram.com/emoleika/
+    - name: керамик
+      status: unknown
+      preview: keramik/preview.jpg
+      works:
+        - type: track
+          title: 9v (фрагмент)
+          file: keramik/track-1.mp3
+        - type: track
+          title: сеанс (фрагмент)
+          file: keramik/track-2.mp3
+      links:
+        tg: https://t.me/crmcmsk
+        vk: https://vk.com/crmcmsk
+        instagram: https://www.instagram.com/keramik.su/
 
   # Сценаристы
   writers: []
