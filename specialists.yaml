@@ -315,6 +315,88 @@ specialists:
       links:
         vk: https://vk.com/publicsvalka
       preview: publicsvalka/preview.jpg
+    - name: щукагррр
+      status: unknown
+      links:
+        tg: https://t.me/shukagrrr
+        vk: https://vk.com/shukagrrr
+    - name: technotrailblazer
+      status: unknown
+      links:
+        tg: https://t.me/technotrailblaz1
+    - name: лейка
+      status: unknown
+      links:
+        instagram: https://www.instagram.com/emoleika/
+    - name: гномаразм
+      status: unknown
+      links:
+        tg: https://t.me/obosrak
+    - name: хе
+      status: unknown
+    - name: zmisuck
+      status: unknown
+      links:
+        tg: https://t.me/mefedro444
+        site: https://artfight.net/~mefedro4
+    - name: sair
+      status: unknown
+      links:
+        tg: https://t.me/sair_png
+        telegram: https://t.me/deadinside2009
+        site: https://sair-png.carrd.co
+        vk: https://vk.com/sairpng
+        x: https://x.com/swr420
+        tumblr: https://www.tumblr.com/sair-png
+        bluesky: https://bsky.app/profile/sair-png.bsky.social
+        youtube: https://youtube.com/@sair_png
+        tiktok: https://www.tiktok.com/@sair.png
+        pinterest: https://pin.it/5fuX9ytjd
+    - name: REVA
+      status: unknown
+      links:
+        tg: https://t.me/revarevaaa
+        telegram: https://t.me/stabues
+    - name: кариша
+      status: unknown
+      links:
+        tg: https://t.me/zaebatorka
+        instagram: https://www.instagram.com/nagibatorka/
+    - name: speedcorechan
+      status: unknown
+      links:
+        tg: https://t.me/speedcorechan
+        telegram: https://t.me/bossigrokov
+    - name: скан-толстячок
+      status: unknown
+      links:
+        tg: https://t.me/biggeradvantage
+    - name: керамик
+      status: unknown
+      links:
+        instagram: https://www.instagram.com/keramik.su/
+    - name: grobikruth
+      status: unknown
+      links:
+        tg: https://t.me/grobikruth
+        telegram: https://t.me/ruthy000
+    - name: V4RTIGO
+      status: unknown
+      links:
+        tg: https://t.me/V4RTIGO
+    - name: лили дюпре
+      status: unknown
+      links:
+        tg: https://t.me/artartinsomnia
+    - name: саша лунти
+      status: unknown
+      links:
+        tg: https://t.me/lunluntii
+        instagram: https://www.instagram.com/lunlunti/
+    - name: саш одиннадцать
+      status: unknown
+      links:
+        tg: https://t.me/mollnote
 
   # Нейрохудожники
   ai-artists:
@@ -383,6 +465,27 @@ specialists:
         - type: track
           title: incelthread
           url: /resource/community/sound/music/incelthread.ogg
+    - name: между
+      status: unknown
+      links:
+        site: https://band.link/mzhd
+        tg: https://t.me/mzhdu
+        vk: https://vk.ru/mzhd.band
+        instagram: https://www.instagram.com/mzhd.band/
+        tiktok: https://www.tiktok.com/@mzhd.band
+    - name: the god syndrome
+      status: unknown
+      links:
+        site: https://band.link/thegodsyndrome
+        tg: https://t.me/thegodsyndrome_band
+        vk: https://vk.com/thegodsyndrome_band
+    - name: проспект энергетиков.
+      status: unknown
+      links:
+        site: https://band.link/o1KMI
+        tg: https://t.me/pospect
+        vk: https://vk.com/energetic_prospekt
+        tiktok: https://www.tiktok.com/@prospektenergeticov
 
   # Сценаристы
   writers: []
