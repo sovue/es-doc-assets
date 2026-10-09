@@ -2,12 +2,11 @@
 
 ## some symbols
 
-:::table
-name;symbols
-arrows;`↑` `↓` `←` `→`
-tiret;`—`
-bullets and squares;`∙` `◦` `▪` `▫`
-:::
+| name | symbols |
+| --- | --- |
+| arrows | `↑` `↓` `←` `→` |
+| tiret | `—` |
+| bullets and squares | `∙` `◦` `▪` `▫` |
 
 ## tags
 
@@ -167,19 +166,47 @@ text between the opening and closing tags replaces the description
 
 ### table
 
-:::table
-1;2;3
-4;5;6
-7;8;9
-:::
+Tables use GitHub Flavored Markdown (GFM): `|` separates cells, the first row
+contains headings, and the second row contains `---` for each column.
+No `:::table` wrapper is needed.
+
+| 1 | 2 | 3 |
+| --- | --- | --- |
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
 
 ```md
-:::table
-1;2;3
-4;5;6
-7;8;9
-:::
+| 1 | 2 | 3 |
+| --- | --- | --- |
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
 ```
+
+Use `:---` for left alignment, `:---:` for centered text, and `---:` for right
+alignment. Inline formatting, links, and code work in cells:
+
+| Name | Example | Count |
+| :--- | :---: | ---: |
+| **Dissolve** | `Dissolve(1.5)` | 3 |
+| [Text tags](/docs/text_tags) | `a\|b` | 10 |
+
+```md
+| Name | Example | Count |
+| :--- | :---: | ---: |
+| **Dissolve** | `Dissolve(1.5)` | 3 |
+| [Text tags](/docs/text_tags) | `a\|b` | 10 |
+```
+
+Escape a literal pipe as `\|`, including inside inline code. Semicolons are
+ordinary text. Leave a blank line before and after a table; a blank line ends
+it. Every row occupies one source line; use `<br>` for a line break inside a
+cell. Block elements such as lists and code fences cannot go inside cells.
+
+The header and separator must have the same number of columns. Missing body
+cells are filled with empty cells; extra cells are ignored. Outer pipes are
+optional, but keeping them makes the source easier to read.
+
+[GFM table specification](https://github.github.com/gfm/#tables-extension-).
 
 ### audio
 
