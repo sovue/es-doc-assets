@@ -405,20 +405,6 @@ specialists:
       links:
         tg: https://t.me/revarevaaa
         telegram: https://t.me/stabues
-    - name: кариша
-      status: open
-      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
-      preview: karisha/preview.jpg
-      works:
-        - type: art
-          title: Авторская маска
-          file: karisha/preview.jpg
-        - type: art
-          title: Маска на фоне гор
-          file: karisha/work-2.jpg
-      links:
-        tg: https://t.me/zaebatorka
-        instagram: https://www.instagram.com/nagibatorka/
     - name: speedcorechan
       status: open
       description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
@@ -483,20 +469,6 @@ specialists:
           file: lili-dupre/work-2.jpg
       links:
         tg: https://t.me/lilidupre
-    - name: саша лунти
-      status: open
-      description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
-      preview: sasha-lunti/preview.jpg
-      works:
-        - type: art
-          title: Авторская маска
-          file: sasha-lunti/preview.jpg
-        - type: art
-          title: Маска на прогулке
-          file: sasha-lunti/work-2.jpg
-      links:
-        tg: https://t.me/lunluntii
-        instagram: https://www.instagram.com/lunlunti/
     - name: саш одиннадцать
       status: open
       description: Для обсуждения и оформления заказа напишите в ЛС группы или лично автору.
