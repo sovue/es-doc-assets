@@ -13,8 +13,20 @@
 
 Для создания `rpa`-архива можно воспользоваться:
 
-1. [RPATool](https://github.com/Shizmob/rpatool)
-2. [Самим Ren'Py](https://www.renpy.org/latest.html)
+1. [Инструментом ES Doc для упаковки RPA](/tools/unpack?mode=pack)
+2. [RPATool](https://github.com/Shizmob/rpatool)
+3. [Самим Ren'Py](https://www.renpy.org/latest.html)
+
+#### Инструмент ES Doc
+
+1. Откройте [упаковщик RPA](/tools/unpack?mode=pack) и добавьте файлы или папку с ресурсами.
+2. Укажите имя архива, например `my_mod.rpa`.
+3. Проверьте «Пути внутри архива». Они должны совпадать с путями в коде относительно папки `game`: `game/mods/my_mod/images/bg.png` должен стать `mods/my_mod/images/bg.png`. При выборе папки `game` её имя удаляется автоматически. Для других папок настройте «Удалить из начала путей» и «Добавить папку в начале».
+4. Нажмите «Создать и скачать RPA».
+
+Файлы обрабатываются в браузере и не отправляются на сервер. Устанавливать Python или Ren'Py не нужно. Инструмент создаёт RPA-3.0 с индексом pickle-протокола 2, который читается старым Ren'Py на Python 2 и современным Ren'Py на Python 3.
+
+Все выбранные файлы попадают в архив без изменений: упаковка не компилирует `.rpy` в `.rpyc` и не скрывает исходный код. Отдельный конфиг для упаковки не требуется. Сжимается только индекс архива; сами ресурсы не сжимаются и не шифруются.
 
 #### RPATool
 
@@ -89,20 +101,47 @@ init python:
 
 ### Интеграция RPA в БЛ
 
-Создаём `rpy`-файл в папке мода с любым названием и прописываем:
+Допустим, мод лежит в `game/mods/my_mod`. До упаковки фон находился в `game/mods/my_mod/images/bg.png`, а музыка — в `game/mods/my_mod/audio/theme.ogg`. Внутри RPA сохраните пути **без `game/`**:
+
+```text
+mods/my_mod/images/bg.png
+mods/my_mod/audio/theme.ogg
+```
+
+Скачанный `my_mod.rpa` положите в `game/mods/my_mod`. Рядом создайте `archive_loader.rpy`:
 
 ```renpy
 init -9999 python:
-    config.archives.append("Путь до rpa-архива без расширения")
+    mod_archive = "mods/my_mod/my_mod"
+    if mod_archive not in config.archives:
+        config.archives.append(mod_archive)
 ```
 
-Благодаря этому наш архив будет добавлен в список архивов, что исключает конфликт с возможными `rpa`-архивами из других модов. Пути к файлам после архивации остаются прежними, если вы сохранили ту же иерархию папок при архивации.
+В `config.archives` указывается путь от `game` до архива **без расширения `.rpa`**. Добавляйте свой архив в существующий список: присваивание `config.archives = [...]` уберёт из него архивы игры и других модов. Загрузчик оставьте вне RPA, чтобы игра могла выполнить его до обращения к ресурсам.
+
+Пути к ресурсам в сценарии остаются прежними:
+
+```renpy
+image my_mod_bg = "mods/my_mod/images/bg.png"
+
+label my_mod_start:
+    scene my_mod_bg
+    play music "mods/my_mod/audio/theme.ogg"
+    "Ресурсы загружены из RPA."
+    return
+```
+
+Папка, в которой лежит RPA, не добавляется к путям внутри него автоматически. Если положить в архив просто `images/bg.png`, обращение к `mods/my_mod/images/bg.png` не сработает.
+
+У разных модов должны быть разные пути ресурсов. `append` сохраняет остальные архивы, но не устраняет совпадения имён файлов: при поиске используется первый подходящий архив в списке, а отдельные файлы на диске имеют приоритет над архивами. Для проверки перенесите исходные ресурсы из `game` в резервную папку вне игры, перезапустите БЛ и проверьте загрузку изображений и музыки.
+
+В современном Ren'Py архивы в `game` подключаются автоматически. Для БЛ с её старым загрузчиком и архивом в папке мода используйте явное добавление выше. Подробнее: [config.archives](https://www.renpy.org/doc/html/config.html#var-config.archives) и [загрузчик Ren'Py 6](https://github.com/renpy/renpy/blob/6.99.12.4.2187/renpy/loader.py).
 
 ### Декодирование RPYC
 
 Для декодирования `rpyc`-файлов вы можете воспользоваться:
 
-- [Инструментом ES Doc для декомпиляции RPYC](/tools?mode=unrpyc)
+- [Инструментом ES Doc для декомпиляции RPYC/PYC](/tools/unpack)
 - [UnRen](https://f95zone.to/threads/unren-bat-v1-0-11d-rpa-extractor-rpyc-decompiler-console-developer-menu-enabler.3083/)
 - [UnRpyc](https://github.com/CensoredUsername/unrpyc)
 - [Game Resources Viewer](https://gameresourcesviewer.ru/tab/rpyc-decompiler-online)
@@ -134,7 +173,7 @@ init -9999 python:
 
 Для декодирования `rpa`-файлов вы можете воспользоваться:
 
-- [Инструментом ES Doc для распаковки RPA](/tools?mode=unrpa)
+- [Инструментом ES Doc для распаковки RPA](/tools/unpack)
 - [UnRen](https://f95zone.to/threads/unren-bat-v1-0-11d-rpa-extractor-rpyc-decompiler-console-developer-menu-enabler.3083/)
 - [UnRpa](https://insertx2k.itch.io/unrpa-commander-amd64)
 - [RPATool](https://github.com/Shizmob/rpatool)
