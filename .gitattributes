@@ -1,0 +1,3 @@
+# Downloadable originals must keep their bytes, including CRLF line endings.
+# Otherwise Git's text conversion changes sizes and source checksums on Linux.
+materials/articles/code_examples/*.rpy -text whitespace=cr-at-eol

@@ -29,7 +29,7 @@ init:
 
 ## Автоматическое объявление файлов (для начинающих)
 
-[autoinitialization_noob.rpy (заглушка)](/materials/download/articles/code_examples/autoinitialization_noob.rpy)
+[autoinitialization_noob.rpy](/docs/download/code_examples/autoinitialization_noob.rpy)
 
 Данный отрезок кода автоматически объявляет все изображения и звуки вашего мода.
 
@@ -67,7 +67,7 @@ init:
 
 ## Автоматическое объявление персонажей и интересные плюшки
 
-[characters.rpy (заглушка)](/materials/download/articles/code_examples/characters.rpy)
+[characters.rpy](/docs/download/code_examples/characters.rpy)
 
 Позволяет автоматически объявить персонажей с БЛ-like стилем текста, исключая возможность создания конфликтов с другими модами. Не забудьте заменить `mymod` на свой вариант.
 
@@ -211,7 +211,7 @@ label mymod:
 
 ## Эффект падающих частиц
 
-[snow.rpy (заглушка)](/materials/download/articles/code_examples/snow.rpy)
+[snow.rpy](/docs/download/code_examples/snow.rpy)
 
 В коде игры уже предусмотрено использование частиц - снега. Имеются два варианта:
 
@@ -382,9 +382,9 @@ label test_label:
 
 ## Создание собственной карты
 
-[map.rpy (заглушка)](/materials/download/articles/code_examples/map.rpy)
+[map.rpy](/docs/download/code_examples/map.rpy)
 
-[map.zip (заглушка)](/materials/download/articles/code_examples/map.zip)
+[map.zip](/docs/download/code_examples/map.zip)
 
 Если вам недостаточно мест в оригинальной карте или вам необходима своя карта для мода, то с помощью этого кода можно её создать. В архиве с ресурсами используется версия оригинальной карты со всеми зонами.
 
@@ -440,7 +440,7 @@ label label_of_house:
 
 ## Создание собственной карты (для начинающих)
 
-[map_noob.rpy (заглушка)](/materials/download/articles/code_examples/map_noob.rpy)
+[map_noob.rpy](/docs/download/code_examples/map_noob.rpy)
 
 В исходном коде игры и во многих модах можно увидеть похожий код для использования карты внутри игры. Но этот метод достаточно сложен в понимании для новичка. Поэтому далее будет показан пример кода для использования карты в вашей модификации.
 
@@ -560,7 +560,7 @@ label screen_map_error_place:
 
 ## Замена интерфейса
 
-[interface.rpy (заглушка)](/materials/download/articles/code_examples/interface.rpy)
+[interface.rpy](/docs/download/code_examples/interface.rpy)
 
 Под интерфейсом предполагаются внутриигровые экраны, с которыми взаимодействует пользователь, такие как:
 
@@ -630,7 +630,7 @@ action [(Function(my_mod_screens_diact)), MainMenu(False)]
 
 ## Создание галереи
 
-[gallery.rpy (заглушка)](/materials/download/articles/code_examples/gallery.rpy)
+[gallery.rpy](/docs/download/code_examples/gallery.rpy)
 
 Код представляет собой полноценную галерею, поделённую на 2 раздела — иллюстрации (CG) и фоны (BG).
 
@@ -810,7 +810,7 @@ text pages:
 
 ## Перевод мода
 
-[translate.rpy (заглушка)](/materials/download/articles/code_examples/translate.rpy)
+[translate.rpy](/docs/download/code_examples/translate.rpy)
 
 Нижеприведённый код позволит перевести ваш мод на другие языки. В примере показан перевод на английский.
 
@@ -938,7 +938,7 @@ label translator_mod:
 
 ## Интеграция Live2D
 
-[live2d.rpy (заглушка)](/materials/download/articles/code_examples/live2d.rpy)
+[live2d.rpy](/docs/download/code_examples/live2d.rpy)
 
 Позволяет интегрировать Live2D в БЛ без необходимости что-либо докачивать. DLL с Live2D автоматически устанавливается в папку `Everlasting Summer/lib/Ваша_ОС`. Поддерживаются Windows, Linux, Mac и, возможно, Android и Web.
 
@@ -1031,7 +1031,7 @@ init:
 
 ## Интеграция Python-модулей
 
-[moduleInstaller.rpy (заглушка)](/materials/download/articles/code_examples/moduleInstaller.rpy)
+[moduleInstaller.rpy](/docs/download/code_examples/moduleInstaller.rpy)
 
 Позволяет устанавливать сторонние Python-модули в ваш мод.
 
@@ -1076,7 +1076,7 @@ init python:
 
 ## Показ всех объявленных персонажей
 
-[characterExport.rpy (заглушка)](/materials/download/articles/code_examples/characterExport.rpy)
+[characterExport.rpy](/docs/download/code_examples/characterExport.rpy)
 
 Записывает всех существующих персонажей в БЛ в файл `characters.txt` (который автоматически создаётся в главной директории БЛ) и открывает его.
 
