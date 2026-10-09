@@ -4,5 +4,7 @@
         "**/*.rpa": true,
         "**/*.rpymc": true,
         "**/cache/": true
-    }
+    },
+    "renpy.diagnostics.diagnosticMode": "openFilesOnly",
+    "renpy.watchFoldersForChanges": false,
 }
